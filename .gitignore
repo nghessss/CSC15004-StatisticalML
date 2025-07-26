@@ -1,0 +1,10 @@
+# Exclude .vscode settings
+.vscode/
+# Exclude all .pyc files
+*.pyc
+# Exclude .vector_cache folder
+.vector_cache/*
+# Exclude development files
+development/*
+# Exclude checkpoint files
+*.ckpt
