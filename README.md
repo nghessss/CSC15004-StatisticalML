@@ -10,3 +10,17 @@
   ```bash
   python inference.py
   ```
+
+# Note
+
+```
+- Thứ 3 => Tối 20h
+- Thứ 6 => Tối 20h
+```
+
+- Cố gắng chọn video có kết quả tốt để demo: 3-5
+- Hỏi thầy có cần làm slide không?
+  - Vì trong file PDF không có yêu cầu này
+- Rút trích 2 đặc trưng cuối cùng
+- Viết code để inference cho 1 video
+- Có khả năng tuần sau sẽ có quiz
