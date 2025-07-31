@@ -1,5 +1,4 @@
-- **Bước 0:** Tái tạo file checkpoints
-  - Giải nén các file zip trong thư mục `checkpoints/` để tạo file `best.ckpt`
+- **Bước 0:** Tải checkpoint từ link: https://huggingface.co/vmphat/btkg/tree/main
 - **Bước 1:** Rút trích 4 loại đặc trưng từ video
   - Sử dụng [link Google Colab](https://colab.research.google.com/drive/1ML7sVxsNlMsqnkxnV6HjdLcwihrRJ_P8#scrollTo=qu4nMmfvimX-)
   - Upload video và chèn link video tương ứng vào code
