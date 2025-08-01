@@ -17,9 +17,8 @@
 - Thứ 6 => Tối 20h
 ```
 
+- Viết báo cáo:
+  - Chương 4 (Kiến trúc mô hình) + Chương 5 (Kết quả thực nghiệm)
+  - Viết bằng tiếng Anh
 - Cố gắng chọn video có kết quả tốt để demo: 3-5
-- Hỏi thầy có cần làm slide không?
-  - Vì trong file PDF không có yêu cầu này
-- Rút trích 2 đặc trưng cuối cùng
-- Viết code để inference cho 1 video
-- Có khả năng tuần sau sẽ có quiz
+- Hỏi thầy có cần làm slide không? => KHÔNG
