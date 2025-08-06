@@ -1,0 +1,19 @@
+\section{Experiments}
+
+\subsection{Experimental Settings}
+
+\subsubsection{Datasets}
+
+The \textbf{MSVD} dataset (Microsoft Research Video Description) was used as the evaluation benchmark. MSVD contains 1,970 short YouTube video clips (10-25 seconds each) with roughly 80,000 English sentences (about 40 captions per clip). These videos are split following standard practice: 1,200 clips for training, 100 for validation, and 670 for testing. (All captions are in English and describe a single-activity scene per clip, as in prior work.)
+
+\subsubsection{Feature extraction}
+
+For MSVD, we extract both spatial and motion features from the video clips. Video frames were sampled at \textbf{5 frames per second (fps)} and fed into a pretrained \textit{Inception-ResNet-V2} network to obtain \textbf{image features}. Concurrently, videos were resampled at \textbf{25 fps} and divided into overlapping 64-frame segments (stride of 5 frames); these segments were processed by an \textit{Inflated 3D ConvNet (I3D)} to compute \textbf{motion features}. The resulting image and motion feature vectors have dimensions \textbf{2048} and \textbf{1024}, respectively. We also encode each video's category label using a 300-dimensional GloVe word vector. For MSVD, 50 frames are uniformly sampled from each video's features, and all feature vectors (image, motion, and category) are projected to a 512-dimensional space.
+
+\subsubsection{Evaluation metrics}
+
+Performance on MSVD was measured with standard automatic captioning metrics: \textbf{BLEU}, \textbf{METEOR}, \textbf{CIDEr-D}, and \textbf{ROUGE-L}. BLEU and METEOR (originally developed for machine translation) quantify the quality of generated text by n-gram overlap with reference captions. CIDEr-D, explicitly designed for caption evaluation, measures consensus with human annotations. ROUGE-L (longest-common-subsequence based) was also used; it emphasizes recall in overlap between generated and reference sentences. These metrics together provide a comprehensive assessment of caption accuracy, relevance, and fluency.
+
+\subsubsection{Parameter settings}
+
+We detail the model's settings for MSVD experiments. The object detector (Mask R-CNN) used a confidence threshold of 0.7 and minimum box size of 224x224. A TransE knowledge-graph was built from 613 unique triples, with each relationship encoded by a 300-dimensional GloVe vector. The Transformer encoders and decoders use 4 layers, with 640-dimensional input embeddings, 512-dimensional model hidden states, 2048-dimensional feedforward layers, and 10 attention heads per layer. (An extended multi-head attention in the STE component uses 128 heads.) During training on MSVD, the balance weight $\lambda$ between forward/backward decoding was set to 0.6 and the model was trained for 30 epochs. We used the Adam optimizer with a batch size of 32 and a learning rate of 1e-4 for MSVD training. Inference used beam search of size 5 with dropout 0.1. All experiments were run on NVIDIA Tesla P100 GPUs.

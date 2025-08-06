@@ -1,0 +1,207 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{attention_is_all_you_need}{inproceedings}{}{}
+      \name{author}{8}{}{%
+        {{hash=7f28e84700536646dd6620a0db07ad09}{%
+           family={Vaswani},
+           familyi={V\bibinitperiod},
+           given={Ashish},
+           giveni={A\bibinitperiod}}}%
+        {{hash=62efade83d70f0323fe248755e6c90c5}{%
+           family={Shazeer},
+           familyi={S\bibinitperiod},
+           given={Noam},
+           giveni={N\bibinitperiod}}}%
+        {{hash=06649ebab1ea5cac0250746a19764975}{%
+           family={Parmar},
+           familyi={P\bibinitperiod},
+           given={Niki},
+           giveni={N\bibinitperiod}}}%
+        {{hash=831027ee0ebf22375e2a86afc1881909}{%
+           family={Uszkoreit},
+           familyi={U\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2fd2982e30ebcec93ec1cf76e0d797fd}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Llion},
+           giveni={L\bibinitperiod}}}%
+        {{hash=27b07e4eacbf4ef7a1438e3badb7dd8d}{%
+           family={Gomez},
+           familyi={G\bibinitperiod},
+           given={Aidan\bibnamedelima N.},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=540fcd72e1fa4bbed46604f4e6cff817}{%
+           family={Kaiser},
+           familyi={K\bibinitperiod},
+           given={Łukasz},
+           giveni={Ł\bibinitperiod}}}%
+        {{hash=95595a0fefb86187cbc36e551017d332}{%
+           family={Polosukhin},
+           familyi={P\bibinitperiod},
+           given={Illia},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Long Beach, California, USA}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates Inc.}%
+      }
+      \strng{namehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{fullhash}{cb26e47f6b8133865271fc8483132297}
+      \strng{fullhashraw}{cb26e47f6b8133865271fc8483132297}
+      \strng{bibnamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authorbibnamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authornamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authorfullhash}{cb26e47f6b8133865271fc8483132297}
+      \strng{authorfullhashraw}{cb26e47f6b8133865271fc8483132297}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 31st International Conference on Neural Information Processing Systems}
+      \field{isbn}{9781510860964}
+      \field{series}{NIPS'17}
+      \field{title}{Attention is all you need}
+      \field{year}{2017}
+      \field{pages}{6000\bibrangedash 6010}
+      \range{pages}{11}
+    \endentry
+    \entry{btkg}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=251a9ca1d749a4524b7daca170d587c8}{%
+           family={Zhong},
+           familyi={Z\bibinitperiod},
+           given={Maosheng},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8941e88da420794e50562cedb6b12c91}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Youde},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=8c6d18e2d167e1a3dc88c0166bbc3471}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod}}}%
+        {{hash=9a865191636f074facec8097e98b3e97}{%
+           family={Xiong},
+           familyi={X\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod}}}%
+        {{hash=c0e3ed732b43ddfe055b9945e379ec58}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Zhixiang},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{25424c70f67cc8b59fe68cff0242b6eb}
+      \strng{fullhash}{8227c9f5744aced70320ee5a9db34c32}
+      \strng{fullhashraw}{8227c9f5744aced70320ee5a9db34c32}
+      \strng{bibnamehash}{25424c70f67cc8b59fe68cff0242b6eb}
+      \strng{authorbibnamehash}{25424c70f67cc8b59fe68cff0242b6eb}
+      \strng{authornamehash}{25424c70f67cc8b59fe68cff0242b6eb}
+      \strng{authorfullhash}{8227c9f5744aced70320ee5a9db34c32}
+      \strng{authorfullhashraw}{8227c9f5744aced70320ee5a9db34c32}
+      \field{extraname}{1}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Multimedia Tools and Applications}
+      \field{month}{12}
+      \field{title}{Bidirectional transformer with knowledge graph for video captioning}
+      \field{volume}{83}
+      \field{year}{2023}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 20}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1007/s11042-023-17822-4
+      \endverb
+    \endentry
+    \entry{BiTransformer}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=251a9ca1d749a4524b7daca170d587c8}{%
+           family={Zhong},
+           familyi={Z\bibinitperiod},
+           given={Maosheng},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8c6d18e2d167e1a3dc88c0166bbc3471}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod}}}%
+        {{hash=97ea4addef0a6948a5af2dcd3a97e675}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=9a865191636f074facec8097e98b3e97}{%
+           family={Xiong},
+           familyi={X\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{25424c70f67cc8b59fe68cff0242b6eb}
+      \strng{fullhash}{55c70477b6229528d5c76eeb3160fc1b}
+      \strng{fullhashraw}{55c70477b6229528d5c76eeb3160fc1b}
+      \strng{bibnamehash}{25424c70f67cc8b59fe68cff0242b6eb}
+      \strng{authorbibnamehash}{25424c70f67cc8b59fe68cff0242b6eb}
+      \strng{authornamehash}{25424c70f67cc8b59fe68cff0242b6eb}
+      \strng{authorfullhash}{55c70477b6229528d5c76eeb3160fc1b}
+      \strng{authorfullhashraw}{55c70477b6229528d5c76eeb3160fc1b}
+      \field{extraname}{2}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0932-8092}
+      \field{journaltitle}{Mach. Vision Appl.}
+      \field{month}{9}
+      \field{number}{5}
+      \field{title}{BiTransformer: augmenting semantic context in video captioning via bidirectional decoder}
+      \field{volume}{33}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1007/s00138-022-01329-3
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00138-022-01329-3
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00138-022-01329-3
+      \endverb
+      \keyw{Video captioning,Bidirectional decoding,Transformer}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
