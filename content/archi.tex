@@ -1,6 +1,8 @@
 % Kiến trúc của mô hình 
-\section{Model Architecture}
+\section{Bidirectional Transformer with Knowledge Graph (BTKG)}
 \label{sec:archi}
+
+\subsection{Overview}
 
 This section describes the proposed Bidirectional Transformer with Knowledge Graph (BTKG) model~\cite{btkg} (Figure~\ref{fig:archi}). We begin by reviewing the basic transformer module and how video features are extracted and captions generated. We then detail the BTKG architecture, including the Spatio-Temporal Encoder, the Objects and Relationships Encoder, and the bidirectional decoder (Backward and Forward Decoders). Finally, we explain the training strategy, including pseudo reverse captions and the loss functions.
 
@@ -46,7 +48,7 @@ In addition to these frame-level features, the model incorporates \textbf{object
 
 For caption generation, this base module uses a bidirectional decoding strategy~\cite{BiTransformer}: there is a backward decoder and a forward decoder. The backward decoder generates captions right-to-left (reverse order), while the forward decoder generates left-to-right. This bidirectional decoder takes as input the encoded video features. The backward decoder's output (a reverse caption and its hidden context) is fed into the forward decoder to improve forward captioning. In summary, the basic module provides: a Transformer backbone, multimodal feature encodings (image, motion, objects, relations), and a bidirectional decoding scheme.
 
-\subsection{Bidirectional Transformer with Knowledge Graph (BTKG)}
+\subsection{BTKG Architecture}
 
 The BTKG model integrates the above components into a unified architecture. It connects a bidirectional decoder with an encoder that incorporates knowledge-graph-enriched object features. As shown in Figure~\ref{fig:archi}, BTKG consists of four parts:
 
