@@ -22,11 +22,14 @@ The keyframe selection procedure is designed to minimize redundancy and extract 
 \subsubsection{Model Architecture}
 The image captioning model employs a sophisticated encoder-decoder architecture, integrating a pre-trained Vision Transformer (ViT) as the encoder and a pre-trained Transformer-based language model (T5) as the decoder.
 
-\begin{figure}[ht]
-  \centerline{\includesvg[width=0.9\columnwidth]{image/img-captioning-archi.svg}}
-  \caption{ViT-T5 image captioning architecture.}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{image/img-captioning-archi.png}
+  \caption{The architecture of the ViT-T5 image captioning model, illustrating the integration of the Vision Transformer (ViT) encoder and the T5 decoder.}
   \label{fig:img_cap_archi}
 \end{figure}
+
+
 
 The visual encoder is a ViT-Base/16~\cite{google-vit-base-patch16-224} model, pre-trained on the ImageNet-21k dataset. Its function is to process an input image and generate a sequence of patch embeddings, which serve as a rich, high-dimensional representation of the image's content.
 

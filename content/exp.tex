@@ -49,14 +49,14 @@ We evaluated our proposed enhancements on the MSVD dataset. The table below pres
 
 \paragraph{Positive Impact of the ResiDual Architecture:} The most significant improvement came from integrating the \textbf{ResiDual} architecture. The ``\textbf{BTKG + Feature Fusion + ResiDual}'' model substantially outperformed our baseline across all metrics. Notably, the CIDEr-D score saw a strong increase to 100.2, and the METEOR score reached 38.3, matching the published result. By stabilizing the training process and preventing representation collapse, ResiDual allows the deeper layers of the model to learn more complex and diverse representations. This directly enhances the model's ability to capture the fine-grained semantics of the video, leading to more accurate and semantically appropriate captions, as reflected by the significant gain in the CIDEr-D score.
 
-% \subsubsection{Conclusion}
+\subsubsection{Observations}
 
-% While our best-performing model has not yet surpassed all the scores from the original publication, our experimental results clearly demonstrate that:
+While our best-performing model has not yet surpassed all the scores from the original publication, our experimental results clearly demonstrate that:
 
-% \begin{enumerate}
-%     \item Using a learnable mechanism like \textbf{Feature Fusion} is more effective for combining multimodal features than direct summation.
+\begin{enumerate}[nosep]
+    \item Using a learnable mechanism like \textbf{Feature Fusion} is more effective for combining multimodal features than direct summation.
     
-%     \item Upgrading the Transformer architecture to a more stable and powerful design like \textbf{ResiDual} yields significant performance gains, particularly in the semantic quality of the generated captions.
-% \end{enumerate}
+    \item Upgrading the Transformer architecture to a more stable and powerful design like \textbf{ResiDual} yields significant performance gains, particularly in the semantic quality of the generated captions.
+\end{enumerate}
 
-% These findings validate our research direction and show that the proposed enhancements have great potential for improving the overall effectiveness of the BTKG model for video captioning.
+These findings validate our research direction and show that the proposed enhancements have great potential for improving the overall effectiveness of the BTKG model for video captioning.

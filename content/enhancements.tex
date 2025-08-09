@@ -42,7 +42,7 @@ The Transformer architecture in the original BTKG model utilizes \textbf{Post-La
 
 While common, the Post-LN architecture suffers from critical limitations, especially when building deep models:
 
-\begin{enumerate}
+\begin{enumerate}[nosep]
     \item \textbf{Gradient Vanishing}: As the gradient signal backpropagates from the top layers to the bottom ones, its magnitude decays exponentially. This is because the gradient must pass through numerous Layer Normalization operations, which hinders the effective training of deeper layers.
     
     \item \textbf{Training Instability}: Successfully training deep Post-LN Transformers often requires auxiliary techniques like learning-rate warm-up to mitigate instability in the early stages of training.
@@ -61,7 +61,7 @@ To address these issues and enhance model stability and performance, we replaced
 
 The ResiDual architecture utilizes \textbf{two parallel residual branches}:
 
-\begin{itemize}
+\begin{itemize}[nosep]
     \item \textbf{Main Branch (Post-LN-like)}: This branch retains the structure of Post-LN, where the sub-block's output is added to its input and then normalized. This branch is crucial for \textbf{maintaining representation diversity}, which helps combat the ``representation collapse'' phenomenon often observed in Pre-LN.
     
     \item \textbf{Dual Branch (Pre-LN-like)}: A second residual path is added, allowing the signal (both forward and backward) to bypass the blocks. This branch accumulates the outputs of the sub-blocks and allows the gradient to flow directly to the deepest layers without being attenuated by normalization layers. This effectively \textbf{solves the gradient vanishing problem}.
@@ -69,7 +69,7 @@ The ResiDual architecture utilizes \textbf{two parallel residual branches}:
 
 \subsubsection*{Benefits of Adopting ResiDual:}
 
-\begin{itemize}
+\begin{itemize}[nosep]
     \item \textbf{Stable Training and Better Convergence}: By providing an unimpeded path for the gradient, ResiDual makes the training process significantly more stable, especially as model depth increases. This reduces the dependency on techniques like learning-rate warm-up.
 
     \item \textbf{Enhanced Representation Capacity}: The architecture prevents representation collapse, ensuring that deeper layers can continue to effectively learn and refine features. This allows the model to fully leverage its parameters, leading to a more powerful and robust model.
