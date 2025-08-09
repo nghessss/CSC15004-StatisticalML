@@ -1,8 +1,10 @@
 % Kiến trúc của mô hình 
-\section{Model Architecture}
+\section{Bidirectional Transformer with Knowledge Graph (BTKG)}
 \label{sec:archi}
 
-This section describes the proposed Bidirectional Transformer with Knowledge Graph (BTKG) model (Figure~\ref{fig:archi}). We begin by reviewing the basic transformer module and how video features are extracted and captions generated. We then detail the BTKG architecture, including the Spatio-Temporal Encoder, the Objects and Relationships Encoder, and the bidirectional decoder (Backward and Forward Decoders). Finally, we explain the training strategy, including pseudo reverse captions and the loss functions.
+\subsection{Overview}
+
+This section describes the proposed Bidirectional Transformer with Knowledge Graph (BTKG) model~\cite{btkg} (Figure~\ref{fig:archi}). We begin by reviewing the basic transformer module and how video features are extracted and captions generated. We then detail the BTKG architecture, including the Spatio-Temporal Encoder, the Objects and Relationships Encoder, and the bidirectional decoder (Backward and Forward Decoders). Finally, we explain the training strategy, including pseudo reverse captions and the loss functions.
 
 \begin{figure}[H]
     \centering
@@ -16,7 +18,6 @@ This section describes the proposed Bidirectional Transformer with Knowledge Gra
 \subsubsection{Transformer Architecture}
 
 The model is built upon the standard Transformer~\cite{attention_is_all_you_need} architecture. A Transformer consists of an encoder and a decoder, each formed by stacking identical layers. Within each layer are two sub-layers: a multi-head attention (MHA) mechanism and a position-wise feed-forward network (FFN), each followed by residual connections and layer normalization. In the MHA sub-layer, the input queries ($Q$), keys ($K$), and values ($V$) are linearly projected into multiple ``heads''. Specifically, for head $i$, we compute $Q W_i^Q$, $K W_i^K$, and $V W_i^V$, where $W_i^Q,W_i^K,W_i^V$ are learned projection matrices. The attention outputs of the $h$ heads are concatenated and projected via $W^O$:
-
 \begin{equation}
 \begin{split}
 \mathrm{MultiHead}(Q,K,V)
@@ -28,19 +29,15 @@ The model is built upon the standard Transformer~\cite{attention_is_all_you_need
 \end{equation}
 
 The Attention function uses scaled dot-product attention:
-
 $$
 \mathrm{Attention}(Q_i,K_i,V_i) \;=\; \mathrm{softmax}\Big(\frac{Q_iK_i^T}{\sqrt{d_k}}\Big)\,V_i,
 $$
-
 where $d_k$ is the dimensionality of the key vectors.
 
 The FFN sub-layer applies two linear transformations with a ReLU nonlinearity in between. For an input $X$,
-
 $$
 \mathrm{FFN}(X) = \max(0,\,XW_1 + b_1)\,W_2 + b_2,
 $$
-
 with parameters $W_1,W_2,b_1,b_2$. Together, these MHA and FFN components provide the basic sequence modeling capability of the Transformer.
 
 \subsubsection{Multimodal Features Extraction and Captions Generation}
@@ -51,11 +48,11 @@ In addition to these frame-level features, the model incorporates \textbf{object
 
 For caption generation, this base module uses a bidirectional decoding strategy~\cite{BiTransformer}: there is a backward decoder and a forward decoder. The backward decoder generates captions right-to-left (reverse order), while the forward decoder generates left-to-right. This bidirectional decoder takes as input the encoded video features. The backward decoder's output (a reverse caption and its hidden context) is fed into the forward decoder to improve forward captioning. In summary, the basic module provides: a Transformer backbone, multimodal feature encodings (image, motion, objects, relations), and a bidirectional decoding scheme.
 
-\subsection{Bidirectional Transformer with Knowledge Graph (BTKG)}
+\subsection{BTKG Architecture}
 
 The BTKG model integrates the above components into a unified architecture. It connects a bidirectional decoder with an encoder that incorporates knowledge-graph-enriched object features. As shown in Figure~\ref{fig:archi}, BTKG consists of four parts:
 
-\begin{itemize}
+\begin{itemize}[nosep]
     \item \textbf{Spatio-Temporal Encoder (STE):} encodes fine-grained frame and motion features to produce $E_{STE}$.
     
     \item \textbf{Objects and Relationships Encoder (ORE):} encodes object features and their relationships (along with coarse video features) to produce $E_{ORE}$.
@@ -70,31 +67,23 @@ The next subsections explain each component in detail.
 \subsubsection{Spatio-Temporal Encoder (STE)}
 
 The STE is designed to capture the fine-grained spatio-temporal content of the video. It operates on the image and motion feature sequences extracted from the video frames (as described above). Formally, let $X=\{x_1,\dots,x_L\}$ be the sampled frames. We extract image features
-
 $$
 F_I = \{f_1,\dots,f_L\}, \quad f_i\in\mathbb{R}^{d_I},
 $$
-
 and motion features
-
 $$
 F_M = \{v_1,\dots,v_N\}, \quad v_j\in\mathbb{R}^{d_M}, \quad N = L/64,
 $$
-
 using Inception-ResNet-V2 and I3D respectively. To combine these modalities, each feature vector is linearly projected to a common dimension $d_{\text{model}}$ by learned weights:
-
 $$
 f'_i = W_L f_i + b_L,\quad v'_j = W_N v_j + b_N,
 $$
-
 where $W_L\in\mathbb{R}^{d_{\text{model}}\times d_I}$, $W_N\in\mathbb{R}^{d_{\text{model}}\times d_M}$, and biases $b_L,b_N\in\mathbb{R}^{d_{\text{model}}}$. This yields transformed sequences $F'_I = \{f'_1,\dots,f'_L\}$ and $F'_M = \{v'_1,\dots,v'_N\}$, where $f'_i, v'_j \in \mathbb{R}^{d_{\text{model}}}$.
 
 The sequences $F'_I$ and $F'_M$ are then each fed through a Transformer encoder (with self-attention and FFN sublayers) to produce embeddings $E_I \in\mathbb{R}^{L\times d_{\text{model}}}$ and $E_M \in\mathbb{R}^{N\times d_{\text{model}}}$. Finally, these are fused by element-wise addition to produce the STE output:
-
 $$
 E_{STE} = E_I \oplus E_M,
 $$
-
 where $\oplus$ denotes element-wise sum. Thus $E_{STE}\in\mathbb{R}^{L\times d_{\text{model}}}$ encodes frame-level (fine-grained) video content by blending appearance and motion features.
 
 A notable detail is that in the STE, the model uses an \textbf{extended multi-head attention} with 128 heads (instead of the usual 8). Using more heads allows the model to capture correlations among positions at a finer temporal scale than whole frames. In practice, the STE employs $h=128$ attention heads as indicated in Eq.~\ref{eq:mha}, which helps BTKG capture fine temporal dependencies.
@@ -102,27 +91,20 @@ A notable detail is that in the STE, the model uses an \textbf{extended multi-he
 \subsubsection{Objects and Relationships Encoder (ORE)}
 
 The ORE captures higher-level semantics by encoding detected objects and their relationships. First, objects are detected in the video using Mask R-CNN (with a Feature Pyramid Network and ROI pooling). For each detected object $i$ (up to $k$ objects), we record its normalized bounding box coordinates and a visual feature vector. Let $R_l=[l_1,\dots,l_k]$ be the list of object locations (each $l_i$ is 4-dimensional) and $R_v=[v_1,\dots,v_k]$ the list of object feature vectors. These are concatenated per-object: the $i$-th object feature is $(l_i|v_i)$, and stacking these forms the object feature matrix $F_o$:
-
 $$
 F_o = \mathrm{concat}_{i=1}^k\bigl(l_i,\,v_i\bigr).
 $$
-
-In the paper's notation this is written as
-
+in the paper's notation this is written as
 $$
 F_o = \mathrm{concat}_{i=1,\dots,k}(R_l\,R_v),
 $$
-
 meaning the row-wise concatenation of $R_l$ and $R_v$ for each object.
 
 In parallel, the object class labels (one-hot vectors $o_i$) are input to the TransE knowledge graph model to predict relations between objects. This yields a set of relation one-hot vectors $\{r_1,\dots,r_{m}\}$, where $m=\binom{k}{2}$. Both the object labels $o_i$ and relation labels $r_j$ are embedded into the same vector space via a shared embedding matrix $W$ (pretrained by Word2Vec). Specifically:
-
 $$
 o'_i = o_i W,\quad r'_j = r_j W,
 $$
-
 producing embedded matrices $R'_o=[o'_1,\dots,o'_k]$ and $R'_r=[r'_1,\dots,r'_m]$. These are concatenated vertically to form the relation feature matrix $F_r$:
-
 $$
 F_r = \begin{bmatrix}R'_o \\ R'_r\end{bmatrix}
 $$
@@ -132,7 +114,6 @@ The matrix $F_r$ thus contains semantic features of objects and predicted relati
 Next, the ORE encodes the content of $F'_I$, $F'_M$ (the same projected image/motion features as STE), $F_o$, and $F_r$. As in the STE, $F'_I$ and $F'_M$ are passed through transformer encoders (here using 10 attention heads) to yield embeddings $E_I$ and $E_M$. Then the object feature matrix $F_o$ is encoded (via a transformer encoder without positional encoding, since object order is arbitrary) to produce an object embedding $E_o$. Likewise, the relation matrix $F_r$ is encoded by a simple feed-forward network (no attention, since relations are unordered) to produce a relation embedding $E_r$.
 
 Finally, these four embeddings are fused by element-wise addition:
-
 $$
 E_{ORE} = E_I \oplus E_M \oplus E_o \oplus E_r.
 $$
@@ -142,11 +123,9 @@ This sum is the output of the ORE. Thus $E_{ORE}\in\mathbb{R}^{L\times d_{\text{
 \subsubsection{Backward Decoder (BD)}
 
 The Backward Decoder generates a caption in reverse order (right-to-left). It takes the STE output $E_{STE}$ as its encoder memory; it does not use $E_{ORE}$, because object relations have no natural reverse-time ordering and could confuse the backward generation. The BD is implemented as a transformer decoder: at each step it attends to $E_{STE}$ and generates one word from the end of sentence toward the beginning. Generation stops when the end marker $<S>$ is produced. If the generated reverse caption is $\overleftarrow{C} = [s_1, s_2, \dots, s_L, <S>]$, then the final hidden state of the BD (after producing $s_L$) is denoted $\overleftarrow{D}_L$. We define the BD's context output as
-
 $$
 \overleftarrow{D} = \overleftarrow{D}_L
 $$
-
 This vector $\overleftarrow{D}$ summarizes the reverse caption's context and is passed on to the forward decoder.
 
 \subsubsection{Forward Decoder (FD)}
@@ -158,11 +137,9 @@ The Forward Decoder generates the final caption left-to-right. It integrates two
 \subsection{Training}
 
 BTKG is trained end-to-end with cross-entropy losses on both decoders. The training involves a two-stage process: first use the backward decoder to generate (pseudo) reverse captions, then use those in the forward decoder. Let $D$ be the training set of videos with forward ground-truth captions. For each video $V$ with forward caption $\overrightarrow{Y}=[y_1,\dots,y_L]$, we first obtain a pseudo reverse caption (described below) and train the BD on that. The FD is then trained on the forward caption, conditioned on the BD's output. Denote the BD loss by $L_{bd}$ and the FD loss by $L_{fd}$ (both standard token-level cross-entropy). The total training loss is a weighted sum:
-
 $$
 L = (1-\lambda)\,L_{bd} + \lambda\,L_{fd},
 $$
-
 where $\lambda\in[0,1]$ balances the two parts.
 
 \subsubsection{Pseudo Reverse Captions}
@@ -172,21 +149,17 @@ To avoid trivial information leakage, the reverse captions used for training are
 \subsubsection{Backward Decoder Loss}
 
 The BD is trained to minimize the negative log-likelihood of the pseudo reverse captions. Formally, if $(V,\overleftarrow{Y})\in D$ where $\overleftarrow{Y}$ is a training reverse caption (of length $T$), then
-
 $$
 L_{bd} = \sum_{(V,\overleftarrow{Y})\in D}\;\sum_{t=1}^T -\log p(y_t \mid V,\,y_1,\dots,y_{t-1};\;\theta_{ste},\theta_{bd}),
 $$
-
 where $y_t$ is the $t$-th token in $\overleftarrow{Y}$, and $\theta_{ste},\theta_{bd}$ are the STE and BD parameters. This is the standard cross-entropy loss for the backward decoder.
 
 \subsubsection{Forward Decoder Loss}
 
 Similarly, the FD is trained by cross-entropy on the forward captions. Importantly, each forward token probability is conditioned on both the video and the reverse-context $\overleftarrow{D}$. The loss is:
-
 $$
 L_{fd} = \sum_{(V,\overrightarrow{Y})\in D}\;\sum_{l=1}^L -\log p(y_l \mid V,\,y_1,\dots,y_{l-1};\;\theta_{ste},\theta_{bd},\theta_{ore},\theta_{fd}),
 $$
-
 with $\theta_{fd},\theta_{ore}$ the FD and ORE parameters. Though the form looks like a normal forward loss, recall that in the FD decoder architecture each step attends to $\overleftarrow{D}$ (the BD context), allowing the model to use ``future'' information encoded by the BD.
 
 In summary, training optimizes $L = (1-\lambda)L_{bd} + \lambda L_{fd}$ so that the BD learns to generate accurate reverse captions and the FD learns to generate accurate forward captions given both video features and the reverse-context. This bidirectional setup with pseudo-reverse captions is designed to reduce information leakage and fully exploit the video semantics captured by the Knowledge Graph encoder.

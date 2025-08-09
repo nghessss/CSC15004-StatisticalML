@@ -10,7 +10,7 @@
 \usepackage{multirow}
 \usepackage{enumitem}
 \usepackage{setspace}
-\usepackage{parskip}
+% \usepackage{parskip}
 \usepackage{tikz}
 \usepackage{forest}
 
@@ -29,8 +29,9 @@
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 
-\usepackage[backend=biber]{biblatex}
+\usepackage[backend=biber, sorting=none]{biblatex}
 \addbibresource{ref.bib}
+\usepackage[inkscapelatex=false]{svg}
 
 % Styling for the code.
 \lstdefinestyle{mystyle}{
@@ -94,6 +95,7 @@
 % Set line and paragraph spacing
 \renewcommand{\baselinestretch}{1.05}
 \setlength{\parskip}{2pt}
+\setlength{\parindent}{1.5em} 
 
 % ============ DOCUMENT ============
 \begin{document}
@@ -108,7 +110,9 @@
 \input{content/intro.tex}
 
 \input{content/archi.tex}
-\input{content/exp.tex}
+\input{content/img_cap.tex}
 
+\input{content/exp.tex}
+\input{content/inference.tex}
 \input{content/ref.tex}
 \end{document}

@@ -5,11 +5,9 @@
 \subsubsection*{Background and Limitation}
 
 In the original BTKG architecture, multimodal features are combined using element-wise addition. Specifically, the Spatio-Temporal Encoder (STE) fuses image and motion features via the formula:
-
 $$E_{STE} = E_I \oplus E_M$$
 
 Similarly, the Objects and Relationships Encoder (ORE) combines all four feature types as:
-
 $$E_{ORE} = E_I \oplus E_M \oplus E_o \oplus E_r$$
 
 This method has an inherent limitation: it assumes that each modality contributes equally to the final representation. Element-wise addition is a static, non-learnable operation that cannot dynamically adjust the weight of each feature type based on the video's context.
@@ -19,7 +17,7 @@ This method has an inherent limitation: it assumes that each modality contribute
 To overcome this drawback, we replace the element-wise addition with a learnable \textbf{Feature Fusion} module. This module employs a 1D convolutional layer (\texttt{Conv1D}) with a kernel size of 1, which effectively acts as a shared linear layer to intelligently combine features.
 
 The \textbf{Feature Fusion} module operates as follows:
-\begin{enumerate}
+\begin{enumerate}[nosep]
     \item \textbf{Concatenation}: Instead of adding them, the feature tensors from different modalities (e.g., $E_I, E_M, E_o, E_r$), which share the shape \texttt{(batch\_size, seq\_len, d\_model)}, are concatenated along the last dimension. This creates a new tensor of shape \texttt{(batch\_size, seq\_len,\\ n\_features * d\_model)}, where \texttt{n\_features} is the number of modalities.
     
     \item \textbf{1x1 Convolution}: The concatenated tensor is then passed through a \texttt{Conv1D} layer with a kernel size of 1. This convolutional layer serves as a learnable linear projection, mapping the feature space from \texttt{n\_features * d\_model} back down to \texttt{d\_model}. In essence, it learns how to ``mix'' the concatenated features to produce a new, more concise, and meaningful representation.
@@ -28,7 +26,7 @@ The \textbf{Feature Fusion} module operates as follows:
 \end{enumerate}
 
 \subsubsection*{Advantages of this Improvement:}
-\begin{itemize}
+\begin{itemize}[nosep]
     \item \textbf{Learnability}: The weights of the \texttt{Conv1D} layer are updated during training. This allows the model to automatically learn the relative importance of each feature type. For instance, in a video with complex actions, the model might learn to assign higher weights to motion features ($E_M$) and relationship features ($E_r$).
     
     \item \textbf{Enhanced Representation Power}: By allowing features to interact through a learned linear transformation, the model can create a richer and more expressive joint representation space compared to a simple summation.
