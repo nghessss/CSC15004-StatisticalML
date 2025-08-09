@@ -2374,7 +2374,8 @@
   <bcf:section number="0">
     <bcf:citekey order="1" intorder="1">attention_is_all_you_need</bcf:citekey>
     <bcf:citekey order="2" intorder="1">BiTransformer</bcf:citekey>
-    <bcf:citekey order="3" intorder="1" nocite="1">*</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">ResiDual</bcf:citekey>
+    <bcf:citekey order="4" intorder="1" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

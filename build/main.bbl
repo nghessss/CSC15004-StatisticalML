@@ -88,6 +88,77 @@
       \field{pages}{6000\bibrangedash 6010}
       \range{pages}{11}
     \endentry
+    \entry{ResiDual}{article}{}{}
+      \name{author}{9}{}{%
+        {{hash=58d25384ce8c4fc277c6f5ed360416b3}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Shufang},
+           giveni={S\bibinitperiod}}}%
+        {{hash=3df4b7f900b4f1fc7d047987a30e02cf}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Huishuai},
+           giveni={H\bibinitperiod}}}%
+        {{hash=90e1dcbd1c2274c38ef42544b4d3e856}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Junliang},
+           giveni={J\bibinitperiod}}}%
+        {{hash=88c58ea43b71cda8e83ddf1181a534ce}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Xu},
+           giveni={X\bibinitperiod}}}%
+        {{hash=9856bacbe78d7b7b8450e13766f6bce7}{%
+           family={Bian},
+           familyi={B\bibinitperiod},
+           given={Jiang},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a5351b3fe2d983db4090878e29507a33}{%
+           family={Awadalla},
+           familyi={A\bibinitperiod},
+           given={Hany\bibnamedelima Hassan},
+           giveni={H\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=fb93da6161d5b2c2a89cc42ab181a47e}{%
+           family={Menezes},
+           familyi={M\bibinitperiod},
+           given={Arul},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5588f729660dbe4dbf5af3850f858ae3}{%
+           family={Qin},
+           familyi={Q\bibinitperiod},
+           given={Tao},
+           giveni={T\bibinitperiod}}}%
+        {{hash=045e37d32a7815787c5d2d0b06ef4e45}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Rui},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{88260c3937b9b8efc4ac0b9443ddf8f7}
+      \strng{fullhash}{107ff8235b841a58ca696efc6c468905}
+      \strng{fullhashraw}{107ff8235b841a58ca696efc6c468905}
+      \strng{bibnamehash}{88260c3937b9b8efc4ac0b9443ddf8f7}
+      \strng{authorbibnamehash}{88260c3937b9b8efc4ac0b9443ddf8f7}
+      \strng{authornamehash}{88260c3937b9b8efc4ac0b9443ddf8f7}
+      \strng{authorfullhash}{107ff8235b841a58ca696efc6c468905}
+      \strng{authorfullhashraw}{107ff8235b841a58ca696efc6c468905}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ArXiv}
+      \field{title}{ResiDual: Transformer with Dual Residual Connections}
+      \field{volume}{abs/2304.14802}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:258418273
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:258418273
+      \endverb
+    \endentry
     \entry{btkg}{article}{}{}
       \name{author}{5}{}{%
         {{hash=251a9ca1d749a4524b7daca170d587c8}{%

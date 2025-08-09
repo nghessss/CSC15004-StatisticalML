@@ -153,6 +153,8 @@ This vector $\overleftarrow{D}$ summarizes the reverse caption's context and is 
 
 The Forward Decoder generates the final caption left-to-right. It integrates two sources of context: the video encoding and the backward decoder's context. Concretely, the FD attends to $E_{ORE}$ (via a standard encoder-decoder attention) so that object and relation features inform each predicted word. It also attends to the reverse caption context $\overleftarrow{D}$ via an extra cross-attention layer. In practice, at each step the FD takes as input all previously generated words and uses cross-attention over $\overleftarrow{D}$ so that it ``sees'' the whole reverse caption context. It similarly attends to $E_{ORE}$ (which contains object/relation/video info). Generation ends at $<S>$, producing a forward caption $\overrightarrow{C}=[s_1,\dots,s_T,<S>]$. Thus, the FD effectively conditions each word on both $E_{ORE}$ and $\overleftarrow{D}$.
 
+\input{content/enhancements.tex}
+
 \subsection{Training}
 
 BTKG is trained end-to-end with cross-entropy losses on both decoders. The training involves a two-stage process: first use the backward decoder to generate (pseudo) reverse captions, then use those in the forward decoder. Let $D$ be the training set of videos with forward ground-truth captions. For each video $V$ with forward caption $\overrightarrow{Y}=[y_1,\dots,y_L]$, we first obtain a pseudo reverse caption (described below) and train the BD on that. The FD is then trained on the forward caption, conditioned on the BD's output. Denote the BD loss by $L_{bd}$ and the FD loss by $L_{fd}$ (both standard token-level cross-entropy). The total training loss is a weighted sum:
