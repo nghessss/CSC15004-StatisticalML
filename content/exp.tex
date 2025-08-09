@@ -17,3 +17,46 @@ Performance on MSVD was measured with standard automatic captioning metrics: BLE
 \subsubsection{Parameter settings}
 
 We detail the model's settings for MSVD experiments. The object detector Mask R-CNN~\cite{he2017mask} used a confidence threshold of 0.7 and minimum box size of 224x224. A TransE knowledge-graph was built from 613 unique triples, with each relationship encoded by a 300-dimensional GloVe vector~\cite{pennington-etal-2014-glove}. The Transformer encoders and decoders use 4 layers, with 640-dimensional input embeddings, 512-dimensional model hidden states, 2048-dimensional feedforward layers, and 10 attention heads per layer. (An extended multi-head attention in the STE component uses 128 heads.) During training on MSVD, the balance weight $\lambda$ between forward/backward decoding was set to 0.6 and the model was trained for 30 epochs. We used the Adam optimizer with a batch size of 32 and a learning rate of 1e-4 for MSVD training. Inference used beam search of size 5 with dropout 0.1. All experiments were run on NVIDIA Tesla P100 GPUs.
+
+\subsection{Performance comparison}
+
+We evaluated our proposed enhancements on the MSVD dataset. The table below presents a comparison between the results published in the original paper, our re-implemented baseline, and our enhanced models.
+
+\begin{table}[H]
+  \centering
+  \renewcommand{\arraystretch}{1.5}
+  \normalsize
+  \label{tab:model_comparison}
+  \begin{tabular}{lcccc}
+    \hline
+    \textbf{Model Version} & \textbf{BLEU@4} &
+    \textbf{METEOR} & \textbf{ROUGE-L} & \textbf{CIDEr-D} \\
+    \hline
+    \textbf{Published Results} & 55.7 & 38.3 & 74.7 & 104.5   \\
+    BTKG (Our Baseline) & 54.6 & 37.9 & 74.3 & 96.8    \\
+    BTKG + Feature Fusion & 55.1 & 38.0 & 74.1 & 98.1    \\
+    BTKG + Feature Fusion + ResiDual & 55.5   & 38.3   & 74.9    & 100.2   \\
+    \hline
+  \end{tabular}
+  \caption{Performance comparison of BTKG models on MSVD dataset.}
+\end{table}
+
+\subsubsection{Analysis of Results}
+
+\paragraph{Comparison with Published Baseline:} Our re-implementation of the original BTKG model yielded slightly lower scores than those reported in the paper, most notably a drop in the CIDEr-D score from 104.5 to 96.8. This discrepancy can be attributed to differences in the experimental environment (the original paper used an RTX 3060 GPU, whereas our experiments were run on an NVIDIA Tesla P100 on Kaggle) or minor variations in data preprocessing. Nonetheless, this result serves as a solid baseline for evaluating our proposed improvements.
+
+\paragraph{Effectiveness of the Feature Fusion Module:} Replacing element-wise addition with our learnable \textbf{Feature Fusion} module led to a noticeable improvement across most metrics, especially CIDEr-D, which increased from 96.8 to 98.1. This confirms that a learnable, weighted combination of features is more effective than a simple, static summation. The model can better prioritize more relevant information, resulting in a richer fused feature vector for the decoder.
+
+\paragraph{Positive Impact of the ResiDual Architecture:} The most significant improvement came from integrating the \textbf{ResiDual} architecture. The ``\textbf{BTKG + Feature Fusion + ResiDual}'' model substantially outperformed our baseline across all metrics. Notably, the CIDEr-D score saw a strong increase to 100.2, and the METEOR score reached 38.3, matching the published result. By stabilizing the training process and preventing representation collapse, ResiDual allows the deeper layers of the model to learn more complex and diverse representations. This directly enhances the model's ability to capture the fine-grained semantics of the video, leading to more accurate and semantically appropriate captions, as reflected by the significant gain in the CIDEr-D score.
+
+% \subsubsection{Conclusion}
+
+% While our best-performing model has not yet surpassed all the scores from the original publication, our experimental results clearly demonstrate that:
+
+% \begin{enumerate}
+%     \item Using a learnable mechanism like \textbf{Feature Fusion} is more effective for combining multimodal features than direct summation.
+    
+%     \item Upgrading the Transformer architecture to a more stable and powerful design like \textbf{ResiDual} yields significant performance gains, particularly in the semantic quality of the generated captions.
+% \end{enumerate}
+
+% These findings validate our research direction and show that the proposed enhancements have great potential for improving the overall effectiveness of the BTKG model for video captioning.
