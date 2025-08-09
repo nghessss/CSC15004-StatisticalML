@@ -18,7 +18,59 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global/global}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{btkg}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=251a9ca1d749a4524b7daca170d587c8}{%
+           family={Zhong},
+           familyi={Z\bibinitperiod},
+           given={Maosheng},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8941e88da420794e50562cedb6b12c91}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Youde},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=8c6d18e2d167e1a3dc88c0166bbc3471}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod}}}%
+        {{hash=9a865191636f074facec8097e98b3e97}{%
+           family={Xiong},
+           familyi={X\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod}}}%
+        {{hash=c0e3ed732b43ddfe055b9945e379ec58}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Zhixiang},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{25424c70f67cc8b59fe68cff0242b6eb}
+      \strng{fullhash}{8227c9f5744aced70320ee5a9db34c32}
+      \strng{fullhashraw}{8227c9f5744aced70320ee5a9db34c32}
+      \strng{bibnamehash}{25424c70f67cc8b59fe68cff0242b6eb}
+      \strng{authorbibnamehash}{25424c70f67cc8b59fe68cff0242b6eb}
+      \strng{authornamehash}{25424c70f67cc8b59fe68cff0242b6eb}
+      \strng{authorfullhash}{8227c9f5744aced70320ee5a9db34c32}
+      \strng{authorfullhashraw}{8227c9f5744aced70320ee5a9db34c32}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Multimedia Tools and Applications}
+      \field{month}{12}
+      \field{title}{Bidirectional transformer with knowledge graph for video captioning}
+      \field{volume}{83}
+      \field{year}{2023}
+      \field{pages}{1\bibrangedash 20}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1007/s11042-023-17822-4
+      \endverb
+    \endentry
     \entry{attention_is_all_you_need}{inproceedings}{}{}
       \name{author}{8}{}{%
         {{hash=7f28e84700536646dd6620a0db07ad09}{%
@@ -76,8 +128,8 @@
       \strng{authornamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
       \strng{authorfullhash}{cb26e47f6b8133865271fc8483132297}
       \strng{authorfullhashraw}{cb26e47f6b8133865271fc8483132297}
-      \field{sortinit}{V}
-      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 31st International Conference on Neural Information Processing Systems}
@@ -87,6 +139,66 @@
       \field{year}{2017}
       \field{pages}{6000\bibrangedash 6010}
       \range{pages}{11}
+    \endentry
+    \entry{BiTransformer}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=251a9ca1d749a4524b7daca170d587c8}{%
+           family={Zhong},
+           familyi={Z\bibinitperiod},
+           given={Maosheng},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8c6d18e2d167e1a3dc88c0166bbc3471}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod}}}%
+        {{hash=97ea4addef0a6948a5af2dcd3a97e675}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=9a865191636f074facec8097e98b3e97}{%
+           family={Xiong},
+           familyi={X\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{25424c70f67cc8b59fe68cff0242b6eb}
+      \strng{fullhash}{55c70477b6229528d5c76eeb3160fc1b}
+      \strng{fullhashraw}{55c70477b6229528d5c76eeb3160fc1b}
+      \strng{bibnamehash}{25424c70f67cc8b59fe68cff0242b6eb}
+      \strng{authorbibnamehash}{25424c70f67cc8b59fe68cff0242b6eb}
+      \strng{authornamehash}{25424c70f67cc8b59fe68cff0242b6eb}
+      \strng{authorfullhash}{55c70477b6229528d5c76eeb3160fc1b}
+      \strng{authorfullhashraw}{55c70477b6229528d5c76eeb3160fc1b}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0932-8092}
+      \field{journaltitle}{Mach. Vision Appl.}
+      \field{month}{9}
+      \field{number}{5}
+      \field{title}{BiTransformer: augmenting semantic context in video captioning via bidirectional decoder}
+      \field{volume}{33}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1007/s00138-022-01329-3
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00138-022-01329-3
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00138-022-01329-3
+      \endverb
+      \keyw{Video captioning,Bidirectional decoding,Transformer}
     \endentry
     \entry{ResiDual}{article}{}{}
       \name{author}{9}{}{%
@@ -144,8 +256,8 @@
       \strng{authornamehash}{88260c3937b9b8efc4ac0b9443ddf8f7}
       \strng{authorfullhash}{107ff8235b841a58ca696efc6c468905}
       \strng{authorfullhashraw}{107ff8235b841a58ca696efc6c468905}
-      \field{sortinit}{X}
-      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{ArXiv}
@@ -159,118 +271,559 @@
       \verb https://api.semanticscholar.org/CorpusID:258418273
       \endverb
     \endentry
-    \entry{btkg}{article}{}{}
-      \name{author}{5}{}{%
-        {{hash=251a9ca1d749a4524b7daca170d587c8}{%
-           family={Zhong},
-           familyi={Z\bibinitperiod},
-           given={Maosheng},
-           giveni={M\bibinitperiod}}}%
-        {{hash=8941e88da420794e50562cedb6b12c91}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Youde},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=8c6d18e2d167e1a3dc88c0166bbc3471}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Hao},
-           giveni={H\bibinitperiod}}}%
-        {{hash=9a865191636f074facec8097e98b3e97}{%
-           family={Xiong},
-           familyi={X\bibinitperiod},
-           given={Hao},
-           giveni={H\bibinitperiod}}}%
-        {{hash=c0e3ed732b43ddfe055b9945e379ec58}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Zhixiang},
-           giveni={Z\bibinitperiod}}}%
+    \entry{google-vit-base-patch16-224-in21k}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={Google},
+           familyi={G\bibinitperiod}}}%
       }
-      \strng{namehash}{25424c70f67cc8b59fe68cff0242b6eb}
-      \strng{fullhash}{8227c9f5744aced70320ee5a9db34c32}
-      \strng{fullhashraw}{8227c9f5744aced70320ee5a9db34c32}
-      \strng{bibnamehash}{25424c70f67cc8b59fe68cff0242b6eb}
-      \strng{authorbibnamehash}{25424c70f67cc8b59fe68cff0242b6eb}
-      \strng{authornamehash}{25424c70f67cc8b59fe68cff0242b6eb}
-      \strng{authorfullhash}{8227c9f5744aced70320ee5a9db34c32}
-      \strng{authorfullhashraw}{8227c9f5744aced70320ee5a9db34c32}
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhashraw}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhashraw}{8b36e9207c24c76e6719268e49201d94}
       \field{extraname}{1}
-      \field{sortinit}{Z}
-      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Multimedia Tools and Applications}
-      \field{month}{12}
-      \field{title}{Bidirectional transformer with knowledge graph for video captioning}
-      \field{volume}{83}
-      \field{year}{2023}
-      \true{nocite}
-      \field{pages}{1\bibrangedash 20}
-      \range{pages}{20}
-      \verb{doi}
-      \verb 10.1007/s11042-023-17822-4
-      \endverb
+      \field{howpublished}{\url{https://huggingface.co/google/vit-base-patch16-224-in21k}}
+      \field{note}{Accessed: 2025-06-08}
+      \field{title}{ViT-Base-Patch16-224-In21k}
+      \field{year}{2024}
     \endentry
-    \entry{BiTransformer}{article}{}{}
-      \name{author}{4}{}{%
-        {{hash=251a9ca1d749a4524b7daca170d587c8}{%
-           family={Zhong},
-           familyi={Z\bibinitperiod},
-           given={Maosheng},
-           giveni={M\bibinitperiod}}}%
-        {{hash=8c6d18e2d167e1a3dc88c0166bbc3471}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Hao},
-           giveni={H\bibinitperiod}}}%
-        {{hash=97ea4addef0a6948a5af2dcd3a97e675}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Yong},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=9a865191636f074facec8097e98b3e97}{%
-           family={Xiong},
-           familyi={X\bibinitperiod},
-           given={Hao},
-           giveni={H\bibinitperiod}}}%
+    \entry{google-vit-base-patch16-224}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={Google},
+           familyi={G\bibinitperiod}}}%
       }
-      \list{location}{1}{%
-        {Berlin, Heidelberg}%
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhashraw}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhashraw}{8b36e9207c24c76e6719268e49201d94}
+      \field{extraname}{2}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://huggingface.co/google/vit-base-patch16-224}}
+      \field{note}{Accessed: 2025-04-08}
+      \field{title}{ViT-Base-Patch16-224}
+      \field{year}{2024}
+    \endentry
+    \entry{phan-etal-2022-vit5}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=f0c28271c2f17135a15ed99006cba7bb}{%
+           family={Phan},
+           familyi={P\bibinitperiod},
+           given={Long},
+           giveni={L\bibinitperiod}}}%
+        {{hash=21e076b433870533de8090e823cac162}{%
+           family={Tran},
+           familyi={T\bibinitperiod},
+           given={Hieu},
+           giveni={H\bibinitperiod}}}%
+        {{hash=94d6c13d20d336d81b1adb2156dd99ce}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Hieu},
+           giveni={H\bibinitperiod}}}%
+        {{hash=9dffe0d27919d9fd2a9358aca8eb9b83}{%
+           family={Trinh},
+           familyi={T\bibinitperiod},
+           given={Trieu\bibnamedelima H.},
+           giveni={T\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {Springer-Verlag}%
+        {Association for Computational Linguistics}%
       }
-      \strng{namehash}{25424c70f67cc8b59fe68cff0242b6eb}
-      \strng{fullhash}{55c70477b6229528d5c76eeb3160fc1b}
-      \strng{fullhashraw}{55c70477b6229528d5c76eeb3160fc1b}
-      \strng{bibnamehash}{25424c70f67cc8b59fe68cff0242b6eb}
-      \strng{authorbibnamehash}{25424c70f67cc8b59fe68cff0242b6eb}
-      \strng{authornamehash}{25424c70f67cc8b59fe68cff0242b6eb}
-      \strng{authorfullhash}{55c70477b6229528d5c76eeb3160fc1b}
-      \strng{authorfullhashraw}{55c70477b6229528d5c76eeb3160fc1b}
-      \field{extraname}{2}
-      \field{sortinit}{Z}
-      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \strng{namehash}{1ddfa4193343a7a6194c287ef0f05cba}
+      \strng{fullhash}{a62ebbccd58323791b60204d93ec8f37}
+      \strng{fullhashraw}{a62ebbccd58323791b60204d93ec8f37}
+      \strng{bibnamehash}{1ddfa4193343a7a6194c287ef0f05cba}
+      \strng{authorbibnamehash}{1ddfa4193343a7a6194c287ef0f05cba}
+      \strng{authornamehash}{1ddfa4193343a7a6194c287ef0f05cba}
+      \strng{authorfullhash}{a62ebbccd58323791b60204d93ec8f37}
+      \strng{authorfullhashraw}{a62ebbccd58323791b60204d93ec8f37}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{0932-8092}
-      \field{journaltitle}{Mach. Vision Appl.}
-      \field{month}{9}
-      \field{number}{5}
-      \field{title}{BiTransformer: augmenting semantic context in video captioning via bidirectional decoder}
-      \field{volume}{33}
+      \field{booktitle}{Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies: Student Research Workshop}
+      \field{title}{{V}i{T}5: Pretrained Text-to-Text Transformer for {V}ietnamese Language Generation}
       \field{year}{2022}
-      \verb{doi}
-      \verb 10.1007/s00138-022-01329-3
-      \endverb
+      \field{pages}{136\bibrangedash 142}
+      \range{pages}{7}
       \verb{urlraw}
-      \verb https://doi.org/10.1007/s00138-022-01329-3
+      \verb https://aclanthology.org/2022.naacl-srw.18
       \endverb
       \verb{url}
-      \verb https://doi.org/10.1007/s00138-022-01329-3
+      \verb https://aclanthology.org/2022.naacl-srw.18
       \endverb
-      \keyw{Video captioning,Bidirectional decoding,Transformer}
+    \endentry
+    \entry{szegedy2016inceptionv4}{misc}{}{}
+      \name{author}{4}{}{%
+        {{hash=ed568d9c3bb059e6bf22899fbf170f86}{%
+           family={Szegedy},
+           familyi={S\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=5543e82359e26b035efc009cb3efff9d}{%
+           family={Ioffe},
+           familyi={I\bibinitperiod},
+           given={Sergey},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8051922e7bd286f884bfbd1023ef62f5}{%
+           family={Vanhoucke},
+           familyi={V\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+        {{hash=cccd50d7dd265efaeee8d3e5ab720923}{%
+           family={Alemi},
+           familyi={A\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{80f8e6bfc3aff3e75b2807a6f6962740}
+      \strng{fullhash}{b52c8c4f12c9eff34cde37350d6a23f1}
+      \strng{fullhashraw}{b52c8c4f12c9eff34cde37350d6a23f1}
+      \strng{bibnamehash}{80f8e6bfc3aff3e75b2807a6f6962740}
+      \strng{authorbibnamehash}{80f8e6bfc3aff3e75b2807a6f6962740}
+      \strng{authornamehash}{80f8e6bfc3aff3e75b2807a6f6962740}
+      \strng{authorfullhash}{b52c8c4f12c9eff34cde37350d6a23f1}
+      \strng{authorfullhashraw}{b52c8c4f12c9eff34cde37350d6a23f1}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning}
+      \field{year}{2016}
+      \verb{eprint}
+      \verb 1602.07261
+      \endverb
+    \endentry
+    \entry{Carreira_2017_CVPR}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=9769c01477fd6a34e0f7732729ee8eb4}{%
+           family={Carreira},
+           familyi={C\bibinitperiod},
+           given={Joao},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c72fc39e94030f67717052309266a44d}{%
+           family={Zisserman},
+           familyi={Z\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{0a316e5d1f3099cd82a261807f608aa0}
+      \strng{fullhash}{0a316e5d1f3099cd82a261807f608aa0}
+      \strng{fullhashraw}{0a316e5d1f3099cd82a261807f608aa0}
+      \strng{bibnamehash}{0a316e5d1f3099cd82a261807f608aa0}
+      \strng{authorbibnamehash}{0a316e5d1f3099cd82a261807f608aa0}
+      \strng{authornamehash}{0a316e5d1f3099cd82a261807f608aa0}
+      \strng{authorfullhash}{0a316e5d1f3099cd82a261807f608aa0}
+      \strng{authorfullhashraw}{0a316e5d1f3099cd82a261807f608aa0}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{proceedings of the IEEE Conference on Computer Vision and Pattern Recognition}
+      \field{title}{Quo vadis, action recognition? a new model and the kinetics dataset}
+      \field{year}{2017}
+      \field{pages}{6299\bibrangedash 6308}
+      \range{pages}{10}
+    \endentry
+    \entry{papineni-etal-2002-bleu}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=7f72c67734e28d79452d687f2b2825d0}{%
+           family={Papineni},
+           familyi={P\bibinitperiod},
+           given={Kishore},
+           giveni={K\bibinitperiod}}}%
+        {{hash=fcdf7cf3f3cfe87d0f08f8f4d98b1137}{%
+           family={Roukos},
+           familyi={R\bibinitperiod},
+           given={Salim},
+           giveni={S\bibinitperiod}}}%
+        {{hash=630f7af400534d0e9f11cc0befbb3fe3}{%
+           family={Ward},
+           familyi={W\bibinitperiod},
+           given={Todd},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ecc966c09b4816bda3be0efb9bedb125}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Wei-Jing},
+           giveni={W\bibinithyphendelim J\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=94f99d08869c0e5e542d0788cc85fc94}{%
+           family={Isabelle},
+           familyi={I\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+        {{hash=0fdf25cc625982a538938b5c9a3024f8}{%
+           family={Charniak},
+           familyi={C\bibinitperiod},
+           given={Eugene},
+           giveni={E\bibinitperiod}}}%
+        {{hash=2e7ed8cdaec24e8abe4685e384ec3a2e}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Dekang},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Philadelphia, Pennsylvania, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{d4eb40956a6de2c2fe50bfef6a72df63}
+      \strng{fullhash}{0a6e6b36539eaebe00a3fef93d4cd32a}
+      \strng{fullhashraw}{0a6e6b36539eaebe00a3fef93d4cd32a}
+      \strng{bibnamehash}{d4eb40956a6de2c2fe50bfef6a72df63}
+      \strng{authorbibnamehash}{d4eb40956a6de2c2fe50bfef6a72df63}
+      \strng{authornamehash}{d4eb40956a6de2c2fe50bfef6a72df63}
+      \strng{authorfullhash}{0a6e6b36539eaebe00a3fef93d4cd32a}
+      \strng{authorfullhashraw}{0a6e6b36539eaebe00a3fef93d4cd32a}
+      \strng{editorbibnamehash}{c8bcecc236bd96e3f6e3810018b8f268}
+      \strng{editornamehash}{c8bcecc236bd96e3f6e3810018b8f268}
+      \strng{editorfullhash}{c8bcecc236bd96e3f6e3810018b8f268}
+      \strng{editorfullhashraw}{c8bcecc236bd96e3f6e3810018b8f268}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 40th Annual Meeting of the Association for Computational Linguistics}
+      \field{month}{7}
+      \field{title}{{B}leu: a Method for Automatic Evaluation of Machine Translation}
+      \field{year}{2002}
+      \field{pages}{311\bibrangedash 318}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.3115/1073083.1073135
+      \endverb
+      \verb{urlraw}
+      \verb https://aclanthology.org/P02-1040/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/P02-1040/
+      \endverb
+    \endentry
+    \entry{banerjee-lavie-2005-meteor}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=82e9bc9432281635a52d33d808963314}{%
+           family={Banerjee},
+           familyi={B\bibinitperiod},
+           given={Satanjeev},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b1ffa393a913fbcab4c0074cc07754c5}{%
+           family={Lavie},
+           familyi={L\bibinitperiod},
+           given={Alon},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Ann Arbor, Michigan}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{f1287e5e266f735dc7989938b1685084}
+      \strng{fullhash}{f1287e5e266f735dc7989938b1685084}
+      \strng{fullhashraw}{f1287e5e266f735dc7989938b1685084}
+      \strng{bibnamehash}{f1287e5e266f735dc7989938b1685084}
+      \strng{authorbibnamehash}{f1287e5e266f735dc7989938b1685084}
+      \strng{authornamehash}{f1287e5e266f735dc7989938b1685084}
+      \strng{authorfullhash}{f1287e5e266f735dc7989938b1685084}
+      \strng{authorfullhashraw}{f1287e5e266f735dc7989938b1685084}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the ACL Workshop on Intrinsic and Extrinsic Evaluation Measures for Machine Translation and/or Summarization}
+      \field{month}{6}
+      \field{title}{{METEOR}: An Automatic Metric for {MT} Evaluation with Improved Correlation with Human Judgments}
+      \field{year}{2005}
+      \field{pages}{65\bibrangedash 72}
+      \range{pages}{8}
+      \verb{urlraw}
+      \verb https://aclanthology.org/W05-0909/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/W05-0909/
+      \endverb
+    \endentry
+    \entry{vedantam2015cider}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=485265d172ca1779fa9691a5b6091cc8}{%
+           family={Vedantam},
+           familyi={V\bibinitperiod},
+           given={Ramakrishna},
+           giveni={R\bibinitperiod}}}%
+        {{hash=80cfc53be593e357287523330a36a046}{%
+           family={Lawrence\bibnamedelima Zitnick},
+           familyi={L\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d0ab7a4601951a0c59352f1dcb531afb}{%
+           family={Parikh},
+           familyi={P\bibinitperiod},
+           given={Devi},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{d0a6b1ea56f273da0f571d6aa0392b05}
+      \strng{fullhash}{d0a6b1ea56f273da0f571d6aa0392b05}
+      \strng{fullhashraw}{d0a6b1ea56f273da0f571d6aa0392b05}
+      \strng{bibnamehash}{d0a6b1ea56f273da0f571d6aa0392b05}
+      \strng{authorbibnamehash}{d0a6b1ea56f273da0f571d6aa0392b05}
+      \strng{authornamehash}{d0a6b1ea56f273da0f571d6aa0392b05}
+      \strng{authorfullhash}{d0a6b1ea56f273da0f571d6aa0392b05}
+      \strng{authorfullhashraw}{d0a6b1ea56f273da0f571d6aa0392b05}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE conference on computer vision and pattern recognition}
+      \field{title}{Cider: Consensus-based image description evaluation}
+      \field{year}{2015}
+      \field{pages}{4566\bibrangedash 4575}
+      \range{pages}{10}
+    \endentry
+    \entry{lin-2004-rouge}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{hash=bc6dfe0750848d77d639c1de6b9934e4}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Chin-Yew},
+           giveni={C\bibinithyphendelim Y\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Barcelona, Spain}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{bc6dfe0750848d77d639c1de6b9934e4}
+      \strng{fullhash}{bc6dfe0750848d77d639c1de6b9934e4}
+      \strng{fullhashraw}{bc6dfe0750848d77d639c1de6b9934e4}
+      \strng{bibnamehash}{bc6dfe0750848d77d639c1de6b9934e4}
+      \strng{authorbibnamehash}{bc6dfe0750848d77d639c1de6b9934e4}
+      \strng{authornamehash}{bc6dfe0750848d77d639c1de6b9934e4}
+      \strng{authorfullhash}{bc6dfe0750848d77d639c1de6b9934e4}
+      \strng{authorfullhashraw}{bc6dfe0750848d77d639c1de6b9934e4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Text Summarization Branches Out}
+      \field{month}{7}
+      \field{title}{{ROUGE}: A Package for Automatic Evaluation of Summaries}
+      \field{year}{2004}
+      \field{pages}{74\bibrangedash 81}
+      \range{pages}{8}
+      \verb{urlraw}
+      \verb https://aclanthology.org/W04-1013/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/W04-1013/
+      \endverb
+    \endentry
+    \entry{he2017mask}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=6b4b60e909e78633945f3f9c9dc83e01}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Kaiming},
+           giveni={K\bibinitperiod}}}%
+        {{hash=6e67eba235a8cccf3a69b746a53d5722}{%
+           family={Gkioxari},
+           familyi={G\bibinitperiod},
+           given={Georgia},
+           giveni={G\bibinitperiod}}}%
+        {{hash=ecd149fdcb3e0503881d49e545744c3d}{%
+           family={Dollár},
+           familyi={D\bibinitperiod},
+           given={Piotr},
+           giveni={P\bibinitperiod}}}%
+        {{hash=bd5dadbe57bedc5957c19a3154c4d424}{%
+           family={Girshick},
+           familyi={G\bibinitperiod},
+           given={Ross},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{fullhash}{25317aa10282a4a31c271050ed66c455}
+      \strng{fullhashraw}{25317aa10282a4a31c271050ed66c455}
+      \strng{bibnamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{authorbibnamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{authornamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{authorfullhash}{25317aa10282a4a31c271050ed66c455}
+      \strng{authorfullhashraw}{25317aa10282a4a31c271050ed66c455}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE international conference on computer vision}
+      \field{title}{Mask r-cnn}
+      \field{year}{2017}
+      \field{pages}{2961\bibrangedash 2969}
+      \range{pages}{9}
+    \endentry
+    \entry{pennington-etal-2014-glove}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=ab47b497d1b0cdaddd8594e4bd501ee5}{%
+           family={Pennington},
+           familyi={P\bibinitperiod},
+           given={Jeffrey},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d5670b2600fea169724521e252d9d09d}{%
+           family={Socher},
+           familyi={S\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=ff4377244c68b8beb3253e53d6387f94}{%
+           family={Manning},
+           familyi={M\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=80e09f0e0ced304dbb98a0451a75b6e3}{%
+           family={Moschitti},
+           familyi={M\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f954c023cbaefd74cfaba0aa87f35048}{%
+           family={Pang},
+           familyi={P\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod}}}%
+        {{hash=de80d83604a86dc9aff51ca1ce3069e6}{%
+           family={Daelemans},
+           familyi={D\bibinitperiod},
+           given={Walter},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Doha, Qatar}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{1808086e3c6ed9cc95e38d0eb5455e5e}
+      \strng{fullhash}{1808086e3c6ed9cc95e38d0eb5455e5e}
+      \strng{fullhashraw}{1808086e3c6ed9cc95e38d0eb5455e5e}
+      \strng{bibnamehash}{1808086e3c6ed9cc95e38d0eb5455e5e}
+      \strng{authorbibnamehash}{1808086e3c6ed9cc95e38d0eb5455e5e}
+      \strng{authornamehash}{1808086e3c6ed9cc95e38d0eb5455e5e}
+      \strng{authorfullhash}{1808086e3c6ed9cc95e38d0eb5455e5e}
+      \strng{authorfullhashraw}{1808086e3c6ed9cc95e38d0eb5455e5e}
+      \strng{editorbibnamehash}{e2187b98613360816f323b4969a45b54}
+      \strng{editornamehash}{e2187b98613360816f323b4969a45b54}
+      \strng{editorfullhash}{e2187b98613360816f323b4969a45b54}
+      \strng{editorfullhashraw}{e2187b98613360816f323b4969a45b54}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing ({EMNLP})}
+      \field{month}{10}
+      \field{title}{{G}lo{V}e: Global Vectors for Word Representation}
+      \field{year}{2014}
+      \field{pages}{1532\bibrangedash 1543}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.3115/v1/D14-1162
+      \endverb
+      \verb{urlraw}
+      \verb https://aclanthology.org/D14-1162/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/D14-1162/
+      \endverb
+    \endentry
+    \entry{comanici2025gemini}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=0254d1c3232bc638c906d797da65f578}{%
+           family={Comanici},
+           familyi={C\bibinitperiod},
+           given={Gheorghe},
+           giveni={G\bibinitperiod}}}%
+        {{hash=7a2e612e819f91ba9ebc9c9c77079e43}{%
+           family={Bieber},
+           familyi={B\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=d6714e18c574f006f51ebab9eba1e4e4}{%
+           family={Schaekermann},
+           familyi={S\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod}}}%
+        {{hash=018a9ae32bcfa68ba6470b10d5366ea8}{%
+           family={Pasupat},
+           familyi={P\bibinitperiod},
+           given={Ice},
+           giveni={I\bibinitperiod}}}%
+        {{hash=7f83fab1075bb5e20ab8f303bbf29d99}{%
+           family={Sachdeva},
+           familyi={S\bibinitperiod},
+           given={Noveen},
+           giveni={N\bibinitperiod}}}%
+        {{hash=891ac832558f50eab7a36951c9cf41fb}{%
+           family={Dhillon},
+           familyi={D\bibinitperiod},
+           given={Inderjit},
+           giveni={I\bibinitperiod}}}%
+        {{hash=9adbfe5ffae6dae9812600afeb770ce0}{%
+           family={Blistein},
+           familyi={B\bibinitperiod},
+           given={Marcel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=416ee2cb84b19aab919030cd0c5f937b}{%
+           family={Ram},
+           familyi={R\bibinitperiod},
+           given={Ori},
+           giveni={O\bibinitperiod}}}%
+        {{hash=8d3346030389bb4358dd53ef845ff0b1}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=44ab58b2ce0eed7a9a8d0c9dd145a629}{%
+           family={Rosen},
+           familyi={R\bibinitperiod},
+           given={Evan},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{70a3a3968ca239aaf15d1d223f4d136a}
+      \strng{fullhash}{587c3d406716a9f8ccb63b103360aa2d}
+      \strng{fullhashraw}{587c3d406716a9f8ccb63b103360aa2d}
+      \strng{bibnamehash}{70a3a3968ca239aaf15d1d223f4d136a}
+      \strng{authorbibnamehash}{70a3a3968ca239aaf15d1d223f4d136a}
+      \strng{authornamehash}{70a3a3968ca239aaf15d1d223f4d136a}
+      \strng{authorfullhash}{587c3d406716a9f8ccb63b103360aa2d}
+      \strng{authorfullhashraw}{587c3d406716a9f8ccb63b103360aa2d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint}
+      \field{title}{Gemini 2.5: Pushing the frontier with advanced reasoning, multimodality, long context, and next generation agentic capabilities}
+      \field{year}{2025}
     \endentry
   \enddatalist
 \endrefsection
