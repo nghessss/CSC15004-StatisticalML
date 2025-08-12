@@ -1,0 +1,47 @@
+\contentsline {section}{\numberline {1}Information}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Student Information}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Source Code}{3}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Introduction}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Background and Motivation}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Project Objectives}{4}{subsection.2.2}%
+\contentsline {paragraph}{Build a Comprehensive Context for Videos:}{4}{section*.2}%
+\contentsline {paragraph}{Develop an Interactive Chatbot:}{4}{section*.3}%
+\contentsline {paragraph}{Integrate and Test the System:}{4}{section*.4}%
+\contentsline {subsection}{\numberline {2.3}Proposed Architecture and Solution}{4}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Bidirectional Transformer with Knowledge Graph (BTKG)}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Overview}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Basic Module}{6}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Transformer Architecture}{6}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Multimodal Features Extraction and Captions Generation}{7}{subsubsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.3}BTKG Architecture}{8}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Spatio-Temporal Encoder (STE)}{8}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Objects and Relationships Encoder (ORE)}{9}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Backward Decoder (BD)}{10}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.4}Forward Decoder (FD)}{10}{subsubsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.4}Proposed Enhancements}{10}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Learnable Multimodal Feature Fusion}{10}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Improving the Transformer Architecture with ResiDual Connections}{11}{subsubsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.5}Training}{13}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}Pseudo Reverse Captions}{13}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}Backward Decoder Loss}{13}{subsubsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.3}Forward Decoder Loss}{14}{subsubsection.3.5.3}%
+\contentsline {section}{\numberline {4}Keyframe-Based Image Captioning}{14}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Keyframe Selection}{14}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Image Captioning Model}{15}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Model Architecture}{15}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Training Procedure}{15}{subsubsection.4.2.2}%
+\contentsline {section}{\numberline {5}Experiments}{16}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Experimental Settings}{16}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Datasets}{16}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Feature extraction}{16}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Evaluation metrics}{16}{subsubsection.5.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.4}Parameter settings}{17}{subsubsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.2}Performance comparison}{17}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Analysis of Results}{17}{subsubsection.5.2.1}%
+\contentsline {paragraph}{Comparison with Published Baseline:}{17}{section*.13}%
+\contentsline {paragraph}{Effectiveness of the Feature Fusion Module:}{17}{section*.14}%
+\contentsline {paragraph}{Positive Impact of the ResiDual Architecture:}{18}{section*.15}%
+\contentsline {subsubsection}{\numberline {5.2.2}Observations}{18}{subsubsection.5.2.2}%
+\contentsline {section}{\numberline {6}Applications}{18}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Chatbot Application}{18}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}User Interface}{19}{subsection.6.2}%

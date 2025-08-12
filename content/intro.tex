@@ -1,6 +1,81 @@
-\section{Abstract}
+\section{Introduction}
 
+\subsection{Background and Motivation}
 
+In the current digital age, we are witnessing an explosion of multimedia data, especially videos. From social media platforms like YouTube, TikTok, and Facebook to security surveillance systems, online courses, and personal archives, video has become a popular and effective medium for conveying information. However, the vast amount of information contained within these videos presents a major challenge: how can we access and retrieve specific information quickly and accurately?
 
+Traditional search methods typically rely on human-created \textbf{metadata}, such as titles, descriptions, or tags. This approach is limited when users want to find specific details inside a video's content, such as a particular action, an object that appears for only a few seconds, the color of an item, or a sentence spoken at a specific moment. Watching an entire video just to find one piece of information is extremely time-consuming and inefficient.
 
-\pagebreak
+To solve this problem, Artificial Intelligence (AI) technologies, particularly in the fields of \textbf{Computer Vision (CV)} and \textbf{Natural Language Processing (NLP)}, have introduced groundbreaking solutions. Models that can ``understand'' the content of images and videos (Image/Video Captioning) and ``listen'' to audio (Speech Recognition) are becoming increasingly powerful and precise.
+
+Driven by this practical need, this project proposes the development of an \textbf{intelligent chatbot system that allows users to directly ask questions about the content of a video}. Instead of watching the entire video, users can interact with the system using natural language, asking questions and receiving accurate answers based on both the visual and audio content of the video.
+
+\subsection{Project Objectives}
+
+This project aims to solve the problem of detailed information retrieval from videos by building and integrating an intelligent chatbot system. The specific objectives are as follows:
+
+\paragraph{Build a Comprehensive Context for Videos:} To automatically extract and combine information from three primary sources:
+
+\begin{itemize}
+    \item \textbf{Static Visual Content (Image Captioning):} Summarize the general scene, main objects, and their attributes from key frames of the video.
+    
+    \item \textbf{Action-based Content (Video Captioning):} Describe the actions and events happening in the video using a specialized model (\textbf{BTKG}~\cite{btkg}) designed to capture motion.
+    
+    \item \textbf{Audio Content (Speech Recognition):} Convert all speech and dialogue within the video into a text transcript using \textbf{PhoWhisper}, a high-accuracy Vietnamese speech recognition model.
+\end{itemize}
+
+\paragraph{Develop an Interactive Chatbot:} To build a chatbot that can understand user questions in natural language and use the generated context to find and provide appropriate answers.
+
+\paragraph{Integrate and Test the System:} To combine the individual modules (Image Captioning, Video Captioning, PhoWhisper, and Chatbot) into a single, complete system and test its effectiveness through real-world question-and-answer scenarios.
+
+\subsection{Proposed Architecture and Solution}
+
+To achieve the objectives mentioned above, the proposed system consists of several core components that work together to create a complete information processing workflow.
+
+\subsubsection*{System Workflow:}
+
+When a user uploads a video, the system processes it using three core modules in parallel:
+
+\begin{enumerate}
+    \item \textbf{Image Captioning Module:} The system extracts several key frames that represent the overall scenery of the video. These frames are then fed into an Image Captioning model to generate short descriptive sentences. For example, from a video of someone at a gym, this module might generate the description: ``\textit{A man is in a gym with various equipment}''. The purpose of this module is to summarize the static scene and objects.
+    
+    \item \textbf{Video Captioning Module (based on the BTKG model):} The entire video is analyzed by the Video Captioning model. This model is specifically designed to focus on recognizing motion and actions. The output is one or more sentences describing the main events. For example: ``\textit{A man is lifting weights}''. This module answers the question, ``What is happening?''.
+    
+    \item \textbf{Speech Recognition Module (PhoWhisper):} The audio stream from the video is separated and processed by the PhoWhisper model. This model converts all conversations or spoken words in the video into a full text transcript. For instance, if the person in the video says, ``\textit{Today, I will try the 100kg weights}'', this module will produce that exact text.
+\end{enumerate}
+
+These three outputs (the static scene description, the action description, and the audio transcript) are then combined to create a single, comprehensive \textbf{text context}. This context acts as the ``brain'' of the chatbot.
+
+When a user asks a question, the chatbot analyzes the query and searches within this text context to provide the most accurate answer.
+
+\subsubsection*{Illustrative Example:}
+
+Consider a video of a person lifting weights. The system would generate a context similar to this:
+
+\begin{itemize}
+    \item \textbf{Image Captioning:} ``A man wearing a blue shirt and black pants is in a gym.''
+
+    \item \textbf{Video Captioning:} ``The man is performing an overhead weightlifting press.''
+
+    \item \textbf{PhoWhisper Transcript:} ``(Sound of breathing) Come on... just one more rep.''
+\end{itemize}
+
+\noindent
+Based on this context, the chatbot can answer a variety of user questions:
+
+\begin{itemize}
+    \item \textbf{User asks:} ``What color is the person's shirt?''
+    \begin{itemize}
+        \item \textbf{Chatbot answers:} ``The person in the video is wearing a blue shirt.'' (Data from Image Captioning)
+    \end{itemize}
+
+    \item \textbf{User asks:} ``What is that person doing?''
+    \begin{itemize}
+        \item \textbf{Chatbot answers:} ``The person in the video is performing an overhead weightlifting press.'' (Data from Video Captioning)
+    \end{itemize}
+
+    \item \textbf{User asks:} ``Is this person saying anything?''
+    \begin{itemize}
+        \item \textbf{Chatbot answers:} ``Yes, the person says: `Come on... just one more rep'.'' (Data from PhoWhisper)
+    \end{itemize}
+\end{itemize}
