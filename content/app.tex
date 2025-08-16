@@ -10,6 +10,14 @@ We used Gemini 2.5 Flash~\cite{comanici2025gemini} to create a chatbot that can 
 
 When a user enters a question accompanied by a short video, the video goes through our two-step captioning process--video captioning and keyframe captioning--and the chatbot then answers the question based on the generated captions. The chatbot is capable of understanding the context of the video and providing relevant answers to user queries.
 
+\subsection{Enhancing Context with Object Detection}
+
+While our captioning models provide high-level summaries of scenes and actions, they may not always capture specific details about every object present in the video. A caption might say, ``\textit{A person is working in an office}'', but it might not list the specific items on the desk, such as a laptop, a mug, or a phone.
+
+To create a more detailed and robust context for our chatbot, we integrated an \textbf{object detection} model. For this task, we chose the \textbf{Ultralytics YOLOv11}~\cite{yolo11_ultralytics} model, using a version pre-trained on the comprehensive \textbf{COCO dataset}. This model is highly efficient and accurate at identifying a wide range of common objects.
+
+The integration process is designed to complement our existing workflow. The same keyframes that are sent to the image captioning model are also processed by YOLOv11. The output from YOLO is a list of all detected objects within those frames. This list is then added to the overall context that is fed to the chatbot.
+
 \subsection{User Interface}
 
 % We designed a user-friendly interface for the chatbot, allowing users to interact with it easily. The interface includes a video player for watching the video, a text input box for entering questions, and a chat window for displaying the chatbot's responses. This setup ensures a seamless user experience, enabling users to engage with the chatbot while watching the video.

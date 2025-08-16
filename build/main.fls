@@ -413,6 +413,7 @@ INPUT content/intro.tex
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT ./content/archi.tex
 INPUT ./content/archi.tex
 INPUT content/archi.tex
@@ -424,7 +425,6 @@ INPUT ./image/archi.jpg
 INPUT ./content/enhancements.tex
 INPUT ./content/enhancements.tex
 INPUT content/enhancements.tex
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT ./image/residual.jpg
 INPUT ./image/residual.jpg
 INPUT ./image/residual.jpg

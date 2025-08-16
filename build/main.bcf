@@ -2389,6 +2389,7 @@
     <bcf:citekey order="15" intorder="1">he2017mask</bcf:citekey>
     <bcf:citekey order="16" intorder="1">pennington-etal-2014-glove</bcf:citekey>
     <bcf:citekey order="17" intorder="1">comanici2025gemini</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">yolo11_ultralytics</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
