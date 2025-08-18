@@ -18,6 +18,14 @@ To create a more detailed and robust context for our chatbot, we integrated an \
 
 The integration process is designed to complement our existing workflow. The same keyframes that are sent to the image captioning model are also processed by YOLOv11. The output from YOLO is a list of all detected objects within those frames. This list is then added to the overall context that is fed to the chatbot.
 
+
+\subsection{Enhancing Context with Speech Recognition}
+
+To capture the auditory information within the video, we integrated an automatic speech recognition (ASR) module. For this purpose, we selected PhoWhisper~\cite{le2024phowhisper}, a state-of-the-art model specifically fine-tuned for the Vietnamese language. Based on OpenAI's robust Whisper architecture, PhoWhisper is trained on a large and diverse dataset of Vietnamese accents, ensuring high accuracy for transcription.
+
+The integration process is straightforward: the audio stream is first extracted from the input video and then processed by the PhoWhisper model. The output is a complete text transcript of any spoken dialogue. This transcript is then added to the overall context fed to the chatbot, allowing it to understand and answer questions based on what is said in the video.
+
+
 \subsection{User Interface}
 
 % We designed a user-friendly interface for the chatbot, allowing users to interact with it easily. The interface includes a video player for watching the video, a text input box for entering questions, and a chat window for displaying the chatbot's responses. This setup ensures a seamless user experience, enabling users to engage with the chatbot while watching the video.

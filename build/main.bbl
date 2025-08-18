@@ -934,6 +934,40 @@
       \verb https://github.com/ultralytics/ultralytics
       \endverb
     \endentry
+    \entry{le2024phowhisper}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=001a3fbe88d716e9052a9184bb9f5ecd}{%
+           family={Le},
+           familyi={L\bibinitperiod},
+           given={Thanh-Thien},
+           giveni={T\bibinithyphendelim T\bibinitperiod}}}%
+        {{hash=1ac1633cca91d473647b3a7e33d26723}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Linh\bibnamedelima The},
+           giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=ad57a037e606b62c0d33d3d410da3e35}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Dat\bibnamedelima Quoc},
+           giveni={D\bibinitperiod\bibinitdelim Q\bibinitperiod}}}%
+      }
+      \strng{namehash}{6d813d80384a5b762c0765fbfd191ecd}
+      \strng{fullhash}{6d813d80384a5b762c0765fbfd191ecd}
+      \strng{fullhashraw}{6d813d80384a5b762c0765fbfd191ecd}
+      \strng{bibnamehash}{6d813d80384a5b762c0765fbfd191ecd}
+      \strng{authorbibnamehash}{6d813d80384a5b762c0765fbfd191ecd}
+      \strng{authornamehash}{6d813d80384a5b762c0765fbfd191ecd}
+      \strng{authorfullhash}{6d813d80384a5b762c0765fbfd191ecd}
+      \strng{authorfullhashraw}{6d813d80384a5b762c0765fbfd191ecd}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2406.02555}
+      \field{title}{Phowhisper: Automatic speech recognition for vietnamese}
+      \field{year}{2024}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
