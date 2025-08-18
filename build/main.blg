@@ -1,15 +1,15 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is 'build/main.blg'
-[82] biber-MSWIN64:340> INFO - === 
-[109] Biber.pm:420> INFO - Reading 'build/main.bcf'
-[187] Biber.pm:994> INFO - Found 20 citekeys in bib section 0
-[200] Biber.pm:4463> INFO - Processing section 0
-[211] Biber.pm:4654> INFO - Looking for bibtex file 'ref.bib' for section 0
-[254] bibtex.pm:1713> INFO - LaTeX decoding ...
-[282] bibtex.pm:1519> INFO - Found BibTeX data source 'ref.bib'
-[414] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[414] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[414] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
-[414] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
-[431] bbl.pm:676> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
-[442] bbl.pm:779> INFO - Output to build/main.bbl
+[210] biber-MSWIN64:340> INFO - === 
+[307] Biber.pm:420> INFO - Reading 'build/main.bcf'
+[389] Biber.pm:994> INFO - Found 22 citekeys in bib section 0
+[400] Biber.pm:4463> INFO - Processing section 0
+[430] Biber.pm:4654> INFO - Looking for bibtex file 'ref.bib' for section 0
+[475] bibtex.pm:1713> INFO - LaTeX decoding ...
+[506] bibtex.pm:1519> INFO - Found BibTeX data source 'ref.bib'
+[756] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[756] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[756] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[756] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[814] bbl.pm:676> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[828] bbl.pm:779> INFO - Output to build/main.bbl

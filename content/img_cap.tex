@@ -19,8 +19,8 @@ The keyframe selection procedure is designed to minimize redundancy and extract 
 
 \subsection{Image Captioning Model}
 
-\subsubsection{Model Architecture}
-The image captioning model employs a sophisticated encoder-decoder architecture, integrating a pre-trained Vision Transformer (ViT) as the encoder and a pre-trained Transformer-based language model (T5) as the decoder.
+\subsubsection{Model Overview}
+The image captioning model employs a sophisticated encoder-decoder architecture, integrating a pre-trained Vision Transformer (ViT)~\cite{dosovitskiy2020image} as the encoder and a pre-trained Transformer-based language model (T5)~\cite{google2020t5} as the decoder.
 
 \begin{figure}
   \centering
@@ -30,12 +30,42 @@ The image captioning model employs a sophisticated encoder-decoder architecture,
 \end{figure}
 
 
-
 The visual encoder is a ViT-Base/16~\cite{google-vit-base-patch16-224} model, pre-trained on the ImageNet-21k dataset. Its function is to process an input image and generate a sequence of patch embeddings, which serve as a rich, high-dimensional representation of the image's content.
 
 The text decoder is based on the VietAI/vit5-base~\cite{phan-etal-2022-vit5} model, a T5 variant specifically pre-trained for the Vietnamese language. To bridge the modality gap between the visual encoder and the text decoder, a dedicated interface mechanism was implemented. A linear projection layer maps the embedding dimension of the ViT's output features to the expected hidden dimension ($d_{\text{model}}$) of the T5 decoder.
 
 During the forward pass, the projected visual features directly substitute the output of the T5's own text encoder. Consequently, the T5 decoder's cross-attention mechanism attends directly to this sequence of visual embeddings, enabling it to generate a textual description conditioned on the image content. For generation, the model utilizes a beam search with a beam width of 3 to produce fluent and coherent captions.
+
+\subsubsection{Encoder: Vision Transformer (ViT)}
+
+The choice of the Vision Transformer (ViT) as the encoder was driven by its fundamental architectural advantages over traditional Convolutional Neural Networks (CNNs). Unlike the local receptive fields of CNNs, ViT's self-attention mechanism allows it to capture global context by modeling long-range dependencies between all image patches simultaneously. This holistic understanding of the scene is critical for generating accurate and coherent captions that describe complex interactions between objects. Guided by this motivation, we adopt a pre-trained ViT-Base/16 as our visual encoder.
+
+Concretely, the visual encoder is the backbone of our image captioning model, responsible for transforming a raw image into a sequence of rich feature embeddings that the text decoder can interpret. We employ a pre-trained ViT-Base/16 model, which processes the image as follows (see Figure~\ref{fig:ViT-architecture}):
+
+\begin{itemize}
+    \item \textbf{Image Patching:} First, instead of processing pixels individually, the ViT architecture treats an image as a sequence. The input image is divided into a grid of fixed-size, non-overlapping patches. For ViT-Base/16, this means patches of size \(16 \times 16\) pixels.
+    
+    \item \textbf{Linear Projection of Patches:} Next, each patch is flattened into a one-dimensional vector and linearly projected into a fixed-dimensional embedding space, yielding a sequence of ``patch embeddings''—analogous to word embeddings in NLP.
+    
+    \item \textbf{Positional Embeddings:} Then, because the Transformer is permutation-invariant, learnable positional embeddings are added to provide spatial context, enabling the model to reason about relative locations of patches.
+    
+    \item \textbf{Transformer Encoder Layers:} Finally, the resulting sequence is fed into a standard Transformer encoder with:
+    \begin{itemize}
+        \item \textit{Multi-Head Self-Attention (MHSA):} to weigh relationships among patches (e.g., ``person'' near ``bicycle'').
+        \item \textit{Feed-Forward Network (FFN):} a position-wise MLP that further processes each embedding.
+    \end{itemize}
+\end{itemize}
+
+The encoder outputs a sequence of contextually-aware patch embeddings, which serve as a high-level representation of the image and are subsequently consumed by the T5 decoder to generate the textual description.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.85\textwidth]{image/ViT-architecture.png}
+  \caption{The architecture of the Vision Transformer model.}
+  \label{fig:ViT-architecture}
+\end{figure}
+
+\subsubsection{Decoder: T5 Language Model}
 
 \subsubsection{Training Procedure}
 The model was trained using a parameter-efficient fine-tuning (PEFT) strategy to leverage the knowledge from the pre-trained components while minimizing computational cost and the risk of catastrophic forgetting. During this phase, the weights of the entire ViT encoder and the T5 text encoder were frozen and did not receive updates. Only the parameters of the T5 decoder, the final language model head, and the intermediary linear projection layer were made trainable.
