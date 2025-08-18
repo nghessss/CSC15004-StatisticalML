@@ -369,6 +369,80 @@
       \verb https://aclanthology.org/2022.naacl-srw.18
       \endverb
     \endentry
+    \entry{vietnamese_coco_2017}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b0d24e9eaeb0f4a9286a08170b185905}{%
+           family={Vu},
+           familyi={V\bibinitperiod},
+           given={Dinh\bibnamedelima Anh},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Kaggle}%
+      }
+      \strng{namehash}{b0d24e9eaeb0f4a9286a08170b185905}
+      \strng{fullhash}{b0d24e9eaeb0f4a9286a08170b185905}
+      \strng{fullhashraw}{b0d24e9eaeb0f4a9286a08170b185905}
+      \strng{bibnamehash}{b0d24e9eaeb0f4a9286a08170b185905}
+      \strng{authorbibnamehash}{b0d24e9eaeb0f4a9286a08170b185905}
+      \strng{authornamehash}{b0d24e9eaeb0f4a9286a08170b185905}
+      \strng{authorfullhash}{b0d24e9eaeb0f4a9286a08170b185905}
+      \strng{authorfullhashraw}{b0d24e9eaeb0f4a9286a08170b185905}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Vietnamese COCO 2017 image caption dataset}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.34740/KAGGLE/DSV/5103962
+      \endverb
+      \verb{urlraw}
+      \verb https://www.kaggle.com/dsv/5103962
+      \endverb
+      \verb{url}
+      \verb https://www.kaggle.com/dsv/5103962
+      \endverb
+    \endentry
+    \entry{pham2024ktvic}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=c6ad0fb8cab2577a6d5f3223090ce74a}{%
+           family={Pham},
+           familyi={P\bibinitperiod},
+           given={Anh-Cuong},
+           giveni={A\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=6b5ff71df46f8a8d671fe095e2907781}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Van-Quang},
+           giveni={V\bibinithyphendelim Q\bibinitperiod}}}%
+        {{hash=7bf5b672b92226699ebbc2f18e795b65}{%
+           family={Vuong},
+           familyi={V\bibinitperiod},
+           given={Thi-Hong},
+           giveni={T\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=c25b9eb1f24ceba50348fd156ccee26c}{%
+           family={Ha},
+           familyi={H\bibinitperiod},
+           given={Quang-Thuy},
+           giveni={Q\bibinithyphendelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{526aab97a891dff685ec52b8d2524565}
+      \strng{fullhash}{832e09be138480ac829abc372b144af1}
+      \strng{fullhashraw}{832e09be138480ac829abc372b144af1}
+      \strng{bibnamehash}{526aab97a891dff685ec52b8d2524565}
+      \strng{authorbibnamehash}{526aab97a891dff685ec52b8d2524565}
+      \strng{authornamehash}{526aab97a891dff685ec52b8d2524565}
+      \strng{authorfullhash}{832e09be138480ac829abc372b144af1}
+      \strng{authorfullhashraw}{832e09be138480ac829abc372b144af1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2401.08100}
+      \field{title}{Ktvic: A vietnamese image captioning dataset on the life domain}
+      \field{year}{2024}
+    \endentry
     \entry{szegedy2016inceptionv4}{misc}{}{}
       \name{author}{4}{}{%
         {{hash=ed568d9c3bb059e6bf22899fbf170f86}{%
@@ -400,8 +474,8 @@
       \strng{authornamehash}{80f8e6bfc3aff3e75b2807a6f6962740}
       \strng{authorfullhash}{b52c8c4f12c9eff34cde37350d6a23f1}
       \strng{authorfullhashraw}{b52c8c4f12c9eff34cde37350d6a23f1}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{cs.CV}
@@ -817,8 +891,8 @@
       \strng{authornamehash}{70a3a3968ca239aaf15d1d223f4d136a}
       \strng{authorfullhash}{587c3d406716a9f8ccb63b103360aa2d}
       \strng{authorfullhashraw}{587c3d406716a9f8ccb63b103360aa2d}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint}
@@ -846,8 +920,8 @@
       \strng{authornamehash}{7ffa0dad9709ac21fa40cfa507db39d1}
       \strng{authorfullhash}{7ffa0dad9709ac21fa40cfa507db39d1}
       \strng{authorfullhashraw}{7ffa0dad9709ac21fa40cfa507db39d1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Ultralytics YOLO11}
