@@ -89,14 +89,14 @@ We also evaluated the ViT-T5 image captioning model on the KTVIC dataset, which 
   \label{tab:ktvic_comparison}
   \begin{tabular}{lcccc}
     \hline
-    \textbf{Decoder-Encoder} & \textbf{BLEU@4} &
+    \textbf{Encoder - Decoder} & \textbf{BLEU@4} &
     \textbf{METEOR} & \textbf{ROUGE-L} & \textbf{CIDEr-D} \\
     \hline
-    ResNet101-LSTM & 15.5 & 27.5 & 42.3 & 21.8   \\
-    ViT-Transformer & 19.3 & 30.1 & 44.7 & 36.8    \\
-    GRIT-GRIT & \textbf{40.6} & 36.6 & \textbf{59.7} & \textbf{136.0}    \\
+    ResNet101 - LSTM & 15.5 & 27.5 & 42.3 & 21.8   \\
+    ViT - Transformer & 19.3 & 30.1 & 44.7 & 36.8    \\
+    GRIT - GRIT & \textbf{40.6} & 36.6 & \textbf{59.7} & \textbf{136.0}    \\
     \hline
-    ViT-T5 (Ours) & 30.3 & \textbf{48.8} & 57.3 & 88.3 \\
+    ViT - T5 (Ours) & 30.3 & \textbf{48.8} & 57.3 & 88.3 \\
     \hline
   \end{tabular}
   \caption{Performance of our ViT-T5 model on the KTVIC dataset. Results for ResNet101-LSTM, ViT-Transformer, and GRIT-GRIT are reported from the original KTVIC dataset paper~\cite{pham2024ktvic} for reference.}
