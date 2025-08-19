@@ -31,21 +31,21 @@
 \contentsline {subsubsection}{\numberline {4.2.1}Model Overview}{16}{subsubsection.4.2.1}%
 \contentsline {subsubsection}{\numberline {4.2.2}Encoder: Vision Transformer (ViT)}{17}{subsubsection.4.2.2}%
 \contentsline {subsubsection}{\numberline {4.2.3}Decoder: T5 Language Model}{18}{subsubsection.4.2.3}%
-\contentsline {subsubsection}{\numberline {4.2.4}Training Procedure}{18}{subsubsection.4.2.4}%
-\contentsline {section}{\numberline {5}Experiments}{20}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Experimental Settings}{20}{subsection.5.1}%
-\contentsline {subsubsection}{\numberline {5.1.1}Datasets}{20}{subsubsection.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.2}Feature extraction (BTKG)}{20}{subsubsection.5.1.2}%
-\contentsline {subsubsection}{\numberline {5.1.3}Evaluation metrics}{20}{subsubsection.5.1.3}%
-\contentsline {subsubsection}{\numberline {5.1.4}Parameter settings}{20}{subsubsection.5.1.4}%
-\contentsline {subsection}{\numberline {5.2}Results and Discussion}{21}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}BTKG Model}{21}{subsubsection.5.2.1}%
-\contentsline {paragraph}{Comparison with Published Baseline:}{21}{section*.13}%
-\contentsline {paragraph}{Effectiveness of the Feature Fusion Module:}{21}{section*.14}%
-\contentsline {paragraph}{Positive Impact of the ResiDual Architecture:}{22}{section*.15}%
-\contentsline {subsubsection}{\numberline {5.2.2}ViT-T5 Image Captioning Model}{22}{subsubsection.5.2.2}%
-\contentsline {section}{\numberline {6}Applications}{24}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Chatbot Application}{24}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Enhancing Context with Object Detection}{24}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Enhancing Context with Speech Recognition}{24}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}User Interface}{25}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {4.2.4}Training Procedure}{19}{subsubsection.4.2.4}%
+\contentsline {section}{\numberline {5}Experiments}{21}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Experimental Settings}{21}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Datasets}{21}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Feature extraction (BTKG)}{21}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Evaluation metrics}{21}{subsubsection.5.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.4}Parameter settings}{21}{subsubsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.2}Results and Discussion}{22}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}BTKG Model}{22}{subsubsection.5.2.1}%
+\contentsline {paragraph}{Comparison with Published Baseline:}{22}{section*.13}%
+\contentsline {paragraph}{Effectiveness of the Feature Fusion Module:}{22}{section*.14}%
+\contentsline {paragraph}{Positive Impact of the ResiDual Architecture:}{23}{section*.15}%
+\contentsline {subsubsection}{\numberline {5.2.2}ViT-T5 Image Captioning Model}{23}{subsubsection.5.2.2}%
+\contentsline {section}{\numberline {6}Applications}{25}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Chatbot Application}{25}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Enhancing Context with Object Detection}{25}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Enhancing Context with Speech Recognition}{25}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}User Interface}{26}{subsection.6.4}%

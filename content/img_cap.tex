@@ -67,10 +67,33 @@ The encoder outputs a sequence of contextually-aware patch embeddings, which ser
 
 \subsubsection{Decoder: T5 Language Model}
 
+The text decoder is the component responsible for generating the final descriptive sentence. For this role, we select VietAI/vit5-base~\cite{phan-etal-2022-vit5}, a T5 variant pre-trained on a large corpus of Vietnamese text. This choice leverages its strong modeling of Vietnamese grammar, syntax, and semantics to produce fluent and natural captions.
+
+While a standard T5 model comprises both an encoder and a decoder, our architecture exclusively utilizes the decoder for text generation. The core challenge is bridging the modality gap so that the text-based T5 decoder can condition on the visual features produced by the ViT encoder. To this end, we replace T5's text encoder with the ViT-derived features via the following steps:
+
+\begin{enumerate}
+    \item \textbf{Dimension alignment via linear projection.} Let the ViT patch embeddings have dimension \(d_{\mathrm{ViT}}\) (for ViT-Base/16, \(d_{\mathrm{ViT}}{=}768\)). The T5 decoder expects inputs of hidden size \(d_{\mathrm{model}}\) (for \texttt{vit5-base}, \(d_{\mathrm{model}}{=}768\)). We pass the ViT outputs through a learnable linear layer \(W \in \mathbb{R}^{d_{\mathrm{ViT}} \times d_{\mathrm{model}}}\) to map visual features into the T5 latent space with minimal information loss.
+    
+    \item \textbf{Encoder-output substitution.} Instead of using T5’s original text encoder, the projected visual features are used to \emph{overwrite} the encoder outputs. Concretely, we construct an encoder output object whose \texttt{last\_hidden\_state} equals the sequence of projected patch embeddings \(\mathbf{H} \in \mathbb{R}^{N \times d_{\mathrm{model}}}\), where \(N\) is the number of visual tokens.
+    
+    \item \textbf{Cross-attention over visual features.} The T5 decoder employs cross-attention at each generation step to attend to the encoder outputs. By substituting the encoder outputs with \(\mathbf{H}\), the decoder directly attends to the image’s visual representation, enabling token generation to be conditioned on salient regions of the image.
+\end{enumerate}
+
+This integration combines the ViT’s strong visual representations with T5’s robust text generation, yielding an effective image-captioning pipeline in Vietnamese.
+
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{image/transformer_residual_layer_norm_3.png}
+  \caption{The architecture of the T5 model.}
+  \label{fig:T5-architecture}
+\end{figure}
+
+
 \subsubsection{Training Procedure}
 The model was trained using a parameter-efficient fine-tuning (PEFT) strategy to leverage the knowledge from the pre-trained components while minimizing computational cost and the risk of catastrophic forgetting. During this phase, the weights of the entire ViT encoder and the T5 text encoder were frozen and did not receive updates. Only the parameters of the T5 decoder, the final language model head, and the intermediary linear projection layer were made trainable.
 
 The model was optimized by minimizing the standard cross-entropy loss between the predicted token sequence and the ground-truth captions. We employed the AdamW optimizer with an initial learning rate of $5 \times 10^{-5}$ and a weight decay of $1 \times 10^{-4}$. The learning rate was dynamically adjusted throughout training using a Cosine Annealing schedule with warm restarts.
 
 Training was conducted for a maximum of 8 epochs. To prevent overfitting and select the best-performing model, an early stopping criterion was implemented. This mechanism monitored the validation loss at the end of each epoch and terminated the training process if no improvement was observed for 5 consecutive epochs. The model checkpoint that achieved the lowest validation loss was saved and used for all subsequent evaluations and inference tasks.
-

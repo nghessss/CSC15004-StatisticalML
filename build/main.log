@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.22)  19 AUG 2025 05:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.22)  19 AUG 2025 10:31
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1026,7 +1026,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.39 ...aluation metrics}{20}{subsubsection.5.1.3}
+l.39 ...aluation metrics}{21}{subsubsection.5.1.3}
                                                   % [1])
 \tf@toc=\write7
 \openout7 = `main.toc'.
@@ -1093,25 +1093,33 @@ Package pdftex.def Info: image/ViT-architecture.png  used on input line 63.
 (pdftex.def)             Requested size: 430.00958pt x 219.33513pt.
 
 
-[18 <./image/ViT-architecture.png>])
+[18 <./image/ViT-architecture.png>]
+<image/transformer_residual_layer_norm_3.png, id=388, 1420.30624pt x 807.015pt>
+File: image/transformer_residual_layer_norm_3.png Graphic file (type png)
+<use image/transformer_residual_layer_norm_3.png>
+Package pdftex.def Info: image/transformer_residual_layer_norm_3.png  used on input line 88.
+(pdftex.def)             Requested size: 505.89pt x 287.44667pt.
 
-[19] (content/exp.tex
 
-[20]
+[19 <./image/transformer_residual_layer_norm_3.png>])
 
-[21])
+[20] (content/exp.tex
 
-[22]
+[21]
 
-[23] (content/app.tex)
+[22])
 
-[24]
+[23]
 
-[25] (content/ref.tex)
+[24] (content/app.tex)
 
-[26]
+[25]
 
-[27] (c:\Users\huygi\Downloads\CSC15004-StatisticalML\build\main.aux)
+[26] (content/ref.tex)
+
+[27]
+
+[28] (c:\Users\huygi\Downloads\CSC15004-StatisticalML\build\main.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-09-10>
@@ -1123,17 +1131,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40629 strings out of 473899
- 872987 string characters out of 5726499
- 1693914 words of memory out of 5000000
- 62824 multiletter control sequences out of 15000+600000
- 566941 words of font info for 68 fonts, out of 8000000 for 9000
+ 40646 strings out of 473899
+ 873431 string characters out of 5726499
+ 1693970 words of memory out of 5000000
+ 62834 multiletter control sequences out of 15000+600000
+ 567562 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,15n,93p,1628b,1468s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\huygi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on c:\Users\huygi\Downloads\CSC15004-StatisticalML\build\main.pdf (28 pages, 1670259 bytes).
+Output written on c:\Users\huygi\Downloads\CSC15004-StatisticalML\build\main.pdf (29 pages, 1780716 bytes).
 PDF statistics:
- 582 PDF objects out of 1000 (max. 8388607)
- 133 named destinations out of 1000 (max. 500000)
- 398 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 593 PDF objects out of 1000 (max. 8388607)
+ 138 named destinations out of 1000 (max. 500000)
+ 403 words of extra memory for PDF output out of 10000 (max. 10000000)
 

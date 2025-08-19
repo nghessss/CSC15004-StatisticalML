@@ -2382,21 +2382,22 @@
     <bcf:citekey order="8" intorder="1">google2020t5</bcf:citekey>
     <bcf:citekey order="9" intorder="1">google-vit-base-patch16-224</bcf:citekey>
     <bcf:citekey order="10" intorder="1">phan-etal-2022-vit5</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">vietnamese_coco_2017</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">pham2024ktvic</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">szegedy2016inceptionv4</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">Carreira_2017_CVPR</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">papineni-etal-2002-bleu</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">banerjee-lavie-2005-meteor</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">vedantam2015cider</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">lin-2004-rouge</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">he2017mask</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">pennington-etal-2014-glove</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">pham2024ktvic</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">phan-etal-2022-vit5</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">vietnamese_coco_2017</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">pham2024ktvic</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">szegedy2016inceptionv4</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">Carreira_2017_CVPR</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">papineni-etal-2002-bleu</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">banerjee-lavie-2005-meteor</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">vedantam2015cider</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">lin-2004-rouge</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">he2017mask</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">pennington-etal-2014-glove</bcf:citekey>
     <bcf:citekey order="22" intorder="1">pham2024ktvic</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">comanici2025gemini</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">yolo11_ultralytics</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">le2024phowhisper</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">pham2024ktvic</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">comanici2025gemini</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">yolo11_ultralytics</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">le2024phowhisper</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
