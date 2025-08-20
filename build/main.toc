@@ -46,6 +46,8 @@
 \contentsline {subsubsection}{\numberline {5.2.2}ViT-T5 Image Captioning Model}{23}{subsubsection.5.2.2}%
 \contentsline {section}{\numberline {6}Applications}{25}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Chatbot Application}{25}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Enhancing Context with Object Detection}{25}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Enhancing Context with Speech Recognition}{25}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}User Interface}{26}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.2}Video Captioning Implementation}{25}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Keyframe Captioning Implementation}{25}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Enhancing Context with Object Detection}{25}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Enhancing Context with Speech Recognition}{26}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}User Interface}{26}{subsection.6.6}%

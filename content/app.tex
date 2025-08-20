@@ -8,7 +8,17 @@ We investigated the applications of our model across various domains. The model'
 
 We used Gemini 2.5 Flash~\cite{comanici2025gemini} to create a chatbot that can answer questions based on the provided context. The chatbot is designed to understand and respond to user queries in a conversational manner, leveraging the model's capabilities to generate human-like responses.
 
-When a user enters a question accompanied by a short video, the video goes through our two-step captioning process--video captioning and keyframe captioning--and the chatbot then answers the question based on the generated captions. The chatbot is capable of understanding the context of the video and providing relevant answers to user queries.
+The system operates in a two-stage process: context generation followed by user interaction. The first stage is initiated upon video upload. The system automatically subjects the video to a multi-modal analysis pipeline involving four concurrent modules: a video captioning model for action summaries, a keyframe captioning model for scene details, an object detection model for itemized lists, and a speech recognition model for audio transcription. The information from these sources is aggregated into a unified contextual document. In the second stage, the user can query the chatbot, which operates exclusively on this pre-generated context to deliver precise answers without re-processing the video.
+
+\subsection{Video Captioning Implementation}
+
+To generate a dynamic, event-based understanding of the video, we first partition the input video into continuous 20-second segments. Each segment is then fed into the video captioning model, which produces a concise description of the main actions and events occurring within that timeframe. The resulting sequence of captions provides a narrative summary that serves as the primary context for the chatbot.
+
+
+\subsection{Keyframe Captioning Implementation}
+
+To complement the action-based summaries, we implement keyframe captioning to capture static, high-fidelity visual details. The pipeline begins by extracting keyframes from the video, which are frames chosen to represent distinct visual states or significant changes in the scene. Each of these keyframes is then individually analyzed by our image captioning model, generating a rich, scene-specific description. This provides a granular level of detail that the broader video summary might omit.
+
 
 \subsection{Enhancing Context with Object Detection}
 
