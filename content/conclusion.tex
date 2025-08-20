@@ -1,3 +1,14 @@
-\section{Future Work}
+\section{Limitations}
+
+The current system has two primary limitations. The first concerns the replication of the original BTKG results. Our re-implemented baseline did not fully match the published CIDEr-D performance (see Figure~\ref{tab:model_comparison}), a discrepancy we attribute to differences in computational environments. Despite this gap, the effectiveness of our proposed enhancements is clear, as they consistently outperformed our own baseline. A second limitation is the system's high processing latency, which is almost entirely attributable to the BTKG model. The computational cost of this single video captioning component dominates the end-to-end processing time. Consequently, despite the efficiency of the other modules, the overall system is better suited for offline tasks. For example, generating the video summary for a three-minute clip is a time-intensive task due to BTKG's complexity.
+
+
 
 \section{Conlusion}
+
+In this project, we successfully designed and implemented an intelligent system capable of understanding and answering natural language questions about video content. Our approach is distinguished by its multi-modal context generation, which synthesizes information from four specialized models covering actions, scenes, objects, and speech.
+
+Key achievements include the successful enhancement of the BTKG video captioning model with novel architectural improvements (Feature Fusion and ResiDual connections), which demonstrably improved caption quality over our baseline. The final chatbot application effectively leverages the rich, pre-generated context to provide accurate and detailed answers, proving the efficacy of our integrated architecture.
+
+Although the current implementation faces latency challenges due to the BTKG model's computational demands, our work establishes a powerful proof-of-concept. Future efforts aimed at performance optimization will be crucial for realizing real-time applications. Overall, this project showcases the power of combining multiple AI perspectives to unlock the vast information stored within video data.
+
