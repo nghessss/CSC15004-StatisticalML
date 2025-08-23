@@ -36,6 +36,39 @@ To capture the auditory information within the video, we integrated an automatic
 The integration process is straightforward: the audio stream is first extracted from the input video and then processed by the PhoWhisper model. The output is a complete text transcript of any spoken dialogue. This transcript is then added to the overall context fed to the chatbot, allowing it to understand and answer questions based on what is said in the video.
 
 
+\subsection{Serving Architecture \& Request Flow}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{image/high-level-architecture.png}
+    \caption{Deployment \& Request Flow (Next.js $\Leftrightarrow$ Kaggle GPU)}
+    \label{fig:deployment-flow}
+\end{figure}
+
+Figure~\ref{fig:deployment-flow} summarizes how the web app serves requests using a lightweight Next.js frontend and a GPU-backed FastAPI service running on Kaggle via ngrok, alongside Gemini~2.5 Flash for conversational reasoning.
+
+\textbf{Provisioning (blue):}
+\begin{enumerate}
+    \item An engineer launches the FastAPI service on Kaggle, which is exposed to the Internet through ngrok and yields a public URL.
+    \item That URL is sent back to the app on deployment.
+    \item The app stores the URL as \texttt{backendURL} in Upstash.
+    \item At runtime, the Next.js client reads \texttt{backendURL} from Upstash so it always targets the current backend.
+\end{enumerate}
+
+\textbf{Inference at runtime (red/orange):}
+\begin{enumerate}
+    \item When the user clicks \textbf{Generate}, Next.js calls the Kaggle \texttt{backendURL} through ngrok.
+    \item Ngrok forwards the request to FastAPI on the GPU.
+    \item FastAPI returns the result to ngrok.
+    \item The response is delivered back to Next.js.
+\end{enumerate}
+
+In parallel, Next.js sends the prompt plus context to \textbf{Gemini 2.5 Flash} and combines the LLM's answer with the GPU model's outputs to reply to the user. 
+
+This setup keeps the UI simple, hides the transient Kaggle URL behind Upstash, and lets the system leverage Kaggle's free GPU without operating dedicated servers.
+
+
+
 \subsection{User Interface}
 
 % We designed a user-friendly interface for the chatbot, allowing users to interact with it easily. The interface includes a video player for watching the video, a text input box for entering questions, and a chat window for displaying the chatbot's responses. This setup ensures a seamless user experience, enabling users to engage with the chatbot while watching the video.

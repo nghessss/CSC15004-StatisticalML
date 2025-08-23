@@ -50,6 +50,7 @@
 \contentsline {subsection}{\numberline {6.3}Keyframe Captioning Implementation}{25}{subsection.6.3}%
 \contentsline {subsection}{\numberline {6.4}Enhancing Context with Object Detection}{25}{subsection.6.4}%
 \contentsline {subsection}{\numberline {6.5}Enhancing Context with Speech Recognition}{26}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}User Interface}{26}{subsection.6.6}%
-\contentsline {section}{\numberline {7}Limitations}{28}{section.7}%
-\contentsline {section}{\numberline {8}Conlusion}{28}{section.8}%
+\contentsline {subsection}{\numberline {6.6}Serving Architecture \& Request Flow}{26}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}User Interface}{28}{subsection.6.7}%
+\contentsline {section}{\numberline {7}Limitations}{29}{section.7}%
+\contentsline {section}{\numberline {8}Conlusion}{29}{section.8}%
