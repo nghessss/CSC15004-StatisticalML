@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.22)  20 AUG 2025 20:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.22)  22 AUG 2025 16:33
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1046,7 +1046,7 @@ Overfull \hbox (15.82768pt too wide) in paragraph at lines 2--2
 []\OT1/cmr/bx/n/17.28 Bidirectional Trans-former with Knowl-edge Graph (BTKG) 
  []
 
-<image/archi.jpg, id=304, 992.70876pt x 545.53813pt>
+<image/archi.jpg, id=305, 992.70876pt x 545.53813pt>
 File: image/archi.jpg Graphic file (type jpg)
 <use image/archi.jpg>
 Package pdftex.def Info: image/archi.jpg  used on input line 11.
@@ -1064,7 +1064,7 @@ Package pdftex.def Info: image/archi.jpg  used on input line 11.
 [11]
 
 [12]
-<image/residual.jpg, id=356, 1058.95625pt x 523.9575pt>
+<image/residual.jpg, id=357, 1058.95625pt x 523.9575pt>
 File: image/residual.jpg Graphic file (type jpg)
 <use image/residual.jpg>
 Package pdftex.def Info: image/residual.jpg  used on input line 57.
@@ -1076,7 +1076,7 @@ Package pdftex.def Info: image/residual.jpg  used on input line 57.
 [14])
 
 [15] (content/img_cap.tex
-<image/img-captioning-archi.png, id=377, 2071.74pt x 915.42pt>
+<image/img-captioning-archi.png, id=378, 2071.74pt x 915.42pt>
 File: image/img-captioning-archi.png Graphic file (type png)
 <use image/img-captioning-archi.png>
 Package pdftex.def Info: image/img-captioning-archi.png  used on input line 27.
@@ -1086,7 +1086,7 @@ Package pdftex.def Info: image/img-captioning-archi.png  used on input line 27.
 [16]
 
 [17 <./image/img-captioning-archi.png>]
-<image/ViT-architecture.png, id=400, 897.3525pt x 457.71pt>
+<image/ViT-architecture.png, id=401, 897.3525pt x 457.71pt>
 File: image/ViT-architecture.png Graphic file (type png)
 <use image/ViT-architecture.png>
 Package pdftex.def Info: image/ViT-architecture.png  used on input line 63.
@@ -1094,7 +1094,7 @@ Package pdftex.def Info: image/ViT-architecture.png  used on input line 63.
 
 
 [18 <./image/ViT-architecture.png>]
-<image/transformer_residual_layer_norm_3.png, id=408, 1420.30624pt x 807.015pt>
+<image/transformer_residual_layer_norm_3.png, id=409, 1420.30624pt x 807.015pt>
 File: image/transformer_residual_layer_norm_3.png Graphic file (type png)
 <use image/transformer_residual_layer_norm_3.png>
 Package pdftex.def Info: image/transformer_residual_layer_norm_3.png  used on input line 88.
@@ -1113,15 +1113,28 @@ Package pdftex.def Info: image/transformer_residual_layer_norm_3.png  used on in
 
 [24] (content/app.tex
 
-[25])
+[25]
+<image/UI/home.png, id=477, 1422.81563pt x 756.57657pt>
+File: image/UI/home.png Graphic file (type png)
+<use image/UI/home.png>
+Package pdftex.def Info: image/UI/home.png  used on input line 46.
+(pdftex.def)             Requested size: 455.2979pt x 242.0979pt.
+<image/UI/example.png, id=478, 1418.29875pt x 757.32938pt>
+File: image/UI/example.png Graphic file (type png)
+<use image/UI/example.png>
+Package pdftex.def Info: image/UI/example.png  used on input line 53.
+(pdftex.def)             Requested size: 455.2979pt x 243.11304pt.
 
-[26] (content/conclusion.tex)
 
-[27] (content/ref.tex)
+[26 <./image/UI/home.png>])
 
-[28]
+[27 <./image/UI/example.png>] (content/conclusion.tex)
 
-[29] (c:\Users\huygi\Downloads\CSC15004-StatisticalML\build\main.aux)
+[28] (content/ref.tex)
+
+[29]
+
+[30] (c:\Users\huygi\Downloads\CSC15004-StatisticalML\build\main.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-09-10>
@@ -1133,17 +1146,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40661 strings out of 473899
- 873731 string characters out of 5726499
- 1693970 words of memory out of 5000000
- 62841 multiletter control sequences out of 15000+600000
+ 40680 strings out of 473899
+ 874138 string characters out of 5726499
+ 1694112 words of memory out of 5000000
+ 62857 multiletter control sequences out of 15000+600000
  567562 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,15n,93p,1628b,1468s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\huygi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/huygi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on c:\Users\huygi\Downloads\CSC15004-StatisticalML\build\main.pdf (30 pages, 1787306 bytes).
+Output written on c:\Users\huygi\Downloads\CSC15004-StatisticalML\build\main.pdf (31 pages, 2237149 bytes).
 PDF statistics:
- 619 PDF objects out of 1000 (max. 8388607)
- 143 named destinations out of 1000 (max. 500000)
- 435 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 633 PDF objects out of 1000 (max. 8388607)
+ 146 named destinations out of 1000 (max. 500000)
+ 445 words of extra memory for PDF output out of 10000 (max. 10000000)
 
