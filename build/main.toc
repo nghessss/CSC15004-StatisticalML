@@ -24,7 +24,7 @@
 \contentsline {subsection}{\numberline {3.5}Training}{14}{subsection.3.5}%
 \contentsline {subsubsection}{\numberline {3.5.1}Pseudo Reverse Captions}{14}{subsubsection.3.5.1}%
 \contentsline {subsubsection}{\numberline {3.5.2}Backward Decoder Loss}{14}{subsubsection.3.5.2}%
-\contentsline {subsubsection}{\numberline {3.5.3}Forward Decoder Loss}{15}{subsubsection.3.5.3}%
+\contentsline {subsubsection}{\numberline {3.5.3}Forward Decoder Loss}{14}{subsubsection.3.5.3}%
 \contentsline {section}{\numberline {4}Keyframe-Based Image Captioning}{16}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Keyframe Selection}{16}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Image Captioning Model}{16}{subsection.4.2}%

@@ -14,24 +14,22 @@ This method has an inherent limitation: it assumes that each modality contribute
 
 \subsubsection*{Proposed Solution: Feature Fusion Module}
 
-To overcome this drawback, we replace the element-wise addition with a learnable \textbf{Feature Fusion} module. This module employs a 1D convolutional layer (\texttt{Conv1D}) with a kernel size of 1, which effectively acts as a shared linear layer to intelligently combine features.
+To overcome this drawback, we replace the element-wise addition with a learnable \textbf{Feature Fusion} module. This module employs a Convolutional layer with a kernel size of 1, which effectively acts as a shared linear layer to intelligently combine features.
 
 The \textbf{Feature Fusion} module operates as follows:
 \begin{enumerate}[nosep]
-    \item \textbf{Concatenation}: Instead of adding them, the feature tensors from different modalities (e.g., $E_I, E_M, E_o, E_r$), which share the shape \texttt{(batch\_size, seq\_len, d\_model)}, are concatenated along the last dimension. This creates a new tensor of shape \texttt{(batch\_size, seq\_len,\\ n\_features * d\_model)}, where \texttt{n\_features} is the number of modalities.
+    \item \textbf{Concatenation}: Instead of adding them, the feature tensors from different modalities (e.g., $E_I, E_M, E_o, E_r$), which share the shape \texttt{(batch\_size, seq\_len, d\_model)}, are concatenated. This creates a new tensor of shape \texttt{(batch\_size, n\_features, seq\_len, d\_model)}, where \texttt{n\_features} is the number of modalities.
     
-    \item \textbf{1x1 Convolution}: The concatenated tensor is then passed through a \texttt{Conv1D} layer with a kernel size of 1. This convolutional layer serves as a learnable linear projection, mapping the feature space from \texttt{n\_features * d\_model} back down to \texttt{d\_model}. In essence, it learns how to ``mix'' the concatenated features to produce a new, more concise, and meaningful representation.
+    \item \textbf{1x1 Convolution}: The concatenated tensor is then passed through a \texttt{Conv} layer with a kernel size of 1. This convolutional layer serves as a learnable linear projection. In essence, it learns how to ``mix'' the concatenated features to produce a new, more concise, and meaningful representation.
     
-    \item \textbf{Output Reshaping}: The output tensor from the \texttt{Conv1D} layer has the shape \texttt{(batch\_size, seq\_len, d\_model)}, making it fully compatible with the rest of the Transformer architecture and a direct replacement for the previous element-wise sum.
+    \item \textbf{Output Reshaping}: The output tensor from the \texttt{Conv} layer has the shape \texttt{(batch\_size, seq\_len, d\_model)}, making it fully compatible with the rest of the Transformer architecture and a direct replacement for the previous element-wise sum.
 \end{enumerate}
 
 \subsubsection*{Advantages of this Improvement:}
 \begin{itemize}[nosep]
-    \item \textbf{Learnability}: The weights of the \texttt{Conv1D} layer are updated during training. This allows the model to automatically learn the relative importance of each feature type. For instance, in a video with complex actions, the model might learn to assign higher weights to motion features ($E_M$) and relationship features ($E_r$).
+    \item \textbf{Learnability}: The weights of the \texttt{Conv} layer are updated during training. This allows the model to automatically learn the relative importance of each feature type. For instance, in a video with complex actions, the model might learn to assign higher weights to motion features ($E_M$) and relationship features ($E_r$).
     
     \item \textbf{Enhanced Representation Power}: By allowing features to interact through a learned linear transformation, the model can create a richer and more expressive joint representation space compared to a simple summation.
-    
-    \item \textbf{Computational Efficiency}: A 1x1 convolution is a highly efficient operation that does not significantly increase the model's computational cost or complexity but substantially improves its expressive power.
 \end{itemize}
 
 \subsubsection{Improving the Transformer Architecture with ResiDual Connections}
