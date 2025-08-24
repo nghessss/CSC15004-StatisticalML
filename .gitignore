@@ -8,3 +8,5 @@
 development/*
 # Exclude checkpoint files
 *.ckpt
+# Exclude video files
+videos/*
