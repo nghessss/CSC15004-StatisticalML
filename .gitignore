@@ -1,2 +1,4 @@
 # Exclude development files
 development/*
+# Exclude all video files
+videos/*
